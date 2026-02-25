@@ -648,28 +648,25 @@ Katie Millar
 </ul>
 </div>
 <div class="fragment">
+<p>Two important things are focused on:</p>
 <ul>
-<li>Beta Diversity, is a measure of dissimilarity or similarity between <strong>two different</strong> communities.</li>
+<li><strong>Species richness</strong>: the number of different species present in a sample. Abundance of species, nor their relative distributions are considered.</li>
+<li><strong>Species eveness</strong>: a measure of relative abundance of different species that make up richness.</li>
 </ul>
 </div>
 <div class="fragment">
-<ul>
-<li>In this lab presentation, we will focus on Beta Diversity, and specifically a method called <strong>Bray-Curtis Dissimilarity</strong></li>
-</ul>
+<p>Beta Diversity, is a measure of dissimilarity or similarity between <strong>two different</strong> communities.</p>
+</div>
+<div class="fragment">
+<p>In this lab presentation, we will focus on Beta Diveristy, and specifically a method called <strong>Bray-Curtis Dissimilarity</strong></p>
 </div>
 </section>
 <section id="step-3---shotgun-metagenomics.-2" class="slide level2">
 <h2>Step 3 - Shotgun Metagenomics.</h2>
 <h3 id="analysis-of-microbiota-data---bray-curtis-disimiliarity">Analysis of microbiota data - Bray Curtis Disimiliarity</h3>
 <div class="fragment">
-<ul>
-<li>Bray-Curtis Dissimilarity can be described as a statistic used to quantify the <strong>dissimilarity</strong> in composition of species between <strong>two</strong> different sites. It works by a formula outputting a value between 0 and 1, with 0 meaning the sites are exactly the same, to very similar, and 1 being they are very dissimilar.</li>
-</ul>
-</div>
-<div class="fragment">
-<ul>
-<li>The formula used in <strong>Bray-Curtis Dissimilarity</strong> is shown below:</li>
-</ul>
+<p>Bray-Curtis Dissimilarity can be described as a statistic used to quantify the <strong>dissimilarity</strong> in composition of species (in this context, microbes) between <strong>two</strong> different sites. It works by a formula (explained below) outputting a value between 0 and 1, with 0 meaning the sites are exactly the same, to very similar, and 1 being they are very dissimilar.</p>
+<p>The formula used in <strong>Bray-Curtis Dissimilarity</strong> is shown below:</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -686,12 +683,8 @@ Katie Millar
 <h3 id="analysis-of-microbiota-data---bray-curtis-dissimilarity-in-action">Analysis of microbiota data - Bray-Curtis Dissimilarity in action</h3>
 <div class="fragment">
 <ul>
-<li>Lets go through an example of how <strong>Bray-Curtis Dissimilarity</strong> works, using data from <a href="https://www.microbiologyresearch.org/content/journal/mgen/10.1099/mgen.0.000801#tab2">Darrington et al.&nbsp;(2022)</a>.</li>
-</ul>
-</div>
-<div class="fragment">
-<ul>
-<li>Because Bray-Curtis Dissimilarity is based on a calculation of two different sites, we will use Medfly larval samples taken from two different fruits (Argan 🌰 and Peach 🍑, taken from Morocco and Greece respectively). That have been sequenced through 16S rRNA sequencing.</li>
+<li><p>Lets go through an example of how <strong>Bray-Curtis Dissimilarity</strong> works, using data from <a href="https://www.microbiologyresearch.org/content/journal/mgen/10.1099/mgen.0.000801#tab2">Darrington et al.&nbsp;(2022)</a>.</p></li>
+<li><p>Because Bray-Curtis Dissimilarity is based on a calculation of two different sites, we will use Medfly larval samples taken from two different fruits (Argan 🌰 and Peach 🍑, taken from Morocco and Greece respectively). That have been sequenced through 16S rRNA sequencing.</p></li>
 </ul>
 </div>
 <div class="fragment">
@@ -794,177 +787,55 @@ BC_{ij} = 1 - \frac{2*0.4}{1 + 1}
 <p><span class="math display">\[
 BC_{ij} = 1 - 0.4 = \mathbf{0.6}
 \]</span></p>
+<div class="fragment">
+<p><strong>Interpretation:</strong><br>
+Using this formula we have worked out the Bray-Curtis Dissimilarity of the two Medfly microbiotas from Argan and Peach to be <strong>0.6</strong>.</p>
+<p>Now let’s go into what this means. Below shows the scale, where Bray-Curtis dissimilarity will range from 0 - 1, with 1 being the largest amount of dissimilarity between the two samples.</p>
+</div>
 </section>
 <section id="step-3---shotgun-metagenomics.-5" class="slide level2">
 <h2>Step 3 - Shotgun Metagenomics.</h2>
-<h3 id="analysis-of-microbiota-data-calculating-bray-curtis-dissimilarity-1">Analysis of microbiota data: Calculating Bray-Curtis Dissimilarity</h3>
-<div class="fragment">
-<p><strong>Interpretation:</strong></p>
-<ul>
-<li>Using this formula we have worked out the Bray-Curtis Dissimilarity of the two Medfly microbiotas from Argan and Peach to be <strong>0.6</strong>.</li>
-</ul>
-</div>
-<div class="fragment">
-<ul>
-<li>Now let’s go into what this means. Below shows the scale, where Bray-Curtis dissimilarity will range from 0 - 1, with 1 being the largest amount of dissimilarity between the two samples.</li>
-</ul>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/braycurtisscale.png" width="768"></p>
-</figure>
-</div>
-</div>
-</div>
-</div>
-<div class="fragment">
-<ul>
-<li>From the scale, we can conclude that two samples are not similar, not are they massively dissimilar. But they are more dissimilar than similar! You might be able to see this makes somewhat sense by going back to the dataframe. To put it simply, a Bray-Curtis dissimilarity of <strong>0.6</strong> indicates moderate dissimilarity between the two sites.</li>
-</ul>
-</div>
-</section>
-<section id="step-3---shotgun-metagenomics.-6" class="slide level2">
-<h2>Step 3 - Shotgun Metagenomics.</h2>
 <h3 id="analysis-of-microbiota-data---nmds">Analysis of microbiota data - NMDS</h3>
-<div class="fragment">
-<ul>
-<li>NMDS (Non-metric Multidimensional Scaling) is an <strong>ordination</strong> technique, which is used to visualise <strong>similarities</strong> or <strong>dissimilarities</strong> in data.</li>
-</ul>
-</div>
-<div class="fragment">
-<ul>
-<li>NMDS is used to reduce the dimensionality of complex data sets, (i.e the abundance of microbes across different sites), to allow for visualisation in a 2D space, (although this can be 3D).</li>
-</ul>
-</div>
-<div class="fragment">
-<ul>
-<li><strong>NMDS</strong> is a non-linear method. It doesn’t preserve actual distances between samples, but instead maintains the <strong>rank order of those distances</strong>, which is especially useful when working with complex samples, such as in ecological or microbial community data.</li>
-</ul>
-</div>
-</section>
-<section id="step-3---shotgun-metagenomics.-7" class="slide level2">
-<h2>Step 3 - Shotgun Metagenomics.</h2>
-<h3 id="analysis-of-microbiota-data---lets-go-through-the-steps">Analysis of microbiota data - Let’s go through the steps</h3>
-<div class="fragment">
-<p>We can do this in R… We will need these two packages</p>
+<div class="column" style="width:40%;">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="co"># Let's get our bacteria dataframe again</span></span>
 <span id="cb2-2"><a href="#cb2-2"></a><span class="fu">library</span>(vegan)</span>
-<span id="cb2-3"><a href="#cb2-3"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
-<div class="fragment">
-<p>We will then need a dataframe These bacteria aren’t proportional, they are just amounts (don’t overthink it)</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a>bacteria_df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb3-2"><a href="#cb3-2"></a>  <span class="at">Klebsiella =</span> <span class="fu">c</span>(<span class="fl">0.75</span>, <span class="fl">0.25</span>, <span class="fl">0.5</span>, <span class="fl">0.7</span>, <span class="fl">0.3</span>, <span class="fl">0.75</span>),</span>
-<span id="cb3-3"><a href="#cb3-3"></a>  <span class="at">Pantonea =</span> <span class="fu">c</span>(<span class="fl">0.15</span>, <span class="fl">0.50</span>, <span class="fl">0.05</span>, <span class="fl">0.03</span>, <span class="fl">0.02</span>, <span class="fl">0.05</span>),</span>
-<span id="cb3-4"><a href="#cb3-4"></a>  <span class="at">Commensalibacter =</span> <span class="fu">c</span>(<span class="fl">0.10</span>, <span class="fl">0.02</span>, <span class="fl">0.01</span>, <span class="fl">0.01</span>, <span class="fl">0.01</span>, <span class="fl">0.01</span>),</span>
-<span id="cb3-5"><a href="#cb3-5"></a>  <span class="at">Serratia =</span> <span class="fu">c</span>(<span class="fl">0.01</span>, <span class="fl">0.05</span>, <span class="fl">0.01</span>, <span class="fl">0.01</span>, <span class="fl">0.02</span>, <span class="fl">0.01</span>),</span>
-<span id="cb3-6"><a href="#cb3-6"></a>  <span class="at">Spinghobacterium =</span> <span class="fu">c</span>(<span class="fl">0.01</span>, <span class="fl">0.15</span>, <span class="fl">0.01</span>, <span class="fl">0.02</span>, <span class="fl">0.01</span>, <span class="fl">0.01</span>),</span>
-<span id="cb3-7"><a href="#cb3-7"></a>  <span class="at">Acinetobacter =</span> <span class="fu">c</span>(<span class="fl">0.02</span>, <span class="fl">0.01</span>, <span class="fl">0.01</span>, <span class="fl">0.01</span>, <span class="fl">0.5</span>, <span class="fl">0.01</span>)</span>
-<span id="cb3-8"><a href="#cb3-8"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
-<div class="fragment">
-<p>This part will need a bit more breaking downis</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="fu">invisible</span>(<span class="fu">capture.output</span>(</span>
-<span id="cb4-2"><a href="#cb4-2"></a>  nmds <span class="ot">&lt;-</span> <span class="fu">metaMDS</span>(bacteria_df, <span class="at">distance =</span> <span class="st">"bray"</span>, <span class="at">k =</span> <span class="dv">2</span>, <span class="at">trymax =</span> <span class="dv">100</span>)</span>
-<span id="cb4-3"><a href="#cb4-3"></a>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>The <code>metaMDS()</code> function:</p>
-<ul>
-<li><p>The <code>metaMDS()</code> function performs NMDS by using multiple random starts to find a stable solution.</p></li>
-<li><p>It standardises the output for easier interpretation and adds species scores to the site ordination. While <code>metaMDS()</code> itself doesn’t directly compute NMDS - when we add the relevant information inside this function, it will.</p></li>
-<li><p>We have set <code>k = 2</code> because we want to reduce the data to two dimensions (simplifying the data).</p></li>
-<li><p>The <code>trymax</code> parameter, set to 100 increases the number of “random starts” to help the algorithm find a stable, low-stress solution (stress is something we will go into more detail on in a bit).</p></li>
-</ul>
-</div>
-</section>
-<section id="step-3---shotgun-metagenomics.-8" class="slide level2">
-<h2>Step 3 - Shotgun Metagenomics.</h2>
-<h3 id="analysis-of-microbiota-data---getting-the-plot">Analysis of microbiota data - getting the plot</h3>
-<div class="fragment">
-<div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>nmds_scores <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(<span class="fu">scores</span>(nmds, <span class="at">display =</span> <span class="st">"sites"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>       NMDS1       NMDS2
-1 -0.3322709 -0.17354187
-2  0.7018915 -0.57838356
-3 -0.0391868  0.26561393
-4 -0.3964679 -0.06633933
-5  0.4761638  0.63079017
-6 -0.4101297 -0.07813934</code></pre>
-</div>
-</div>
-<p>This is a process of extracting the site scores, for us - the site is the fruit which the flies are on so based off the nmds values generated above, it will extract these ordination scores</p>
-</div>
-<div class="fragment">
-<div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a>nmds_scores<span class="sc">$</span>Fruit <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Argan"</span>, <span class="st">"Peach"</span>, <span class="st">"Apricot"</span>, <span class="st">"Grapefruit"</span>, <span class="st">"Orange"</span>, <span class="st">"Tangerine"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>This part simply assigns our scores to the fruits</p>
-</div>
-<div class="fragment">
-<div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a>nmds_plot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(nmds_scores,</span>
-<span id="cb8-2"><a href="#cb8-2"></a>                    <span class="fu">aes</span>(<span class="at">x =</span> NMDS1, <span class="at">y =</span> NMDS2, <span class="at">colour =</span> Fruit)) <span class="sc">+</span></span>
-<span id="cb8-3"><a href="#cb8-3"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">4</span>) <span class="sc">+</span></span>
-<span id="cb8-4"><a href="#cb8-4"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
-<span id="cb8-5"><a href="#cb8-5"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"NMDS Plot of Bacterial Composition"</span>,</span>
-<span id="cb8-6"><a href="#cb8-6"></a>       <span class="at">subtitle =</span> <span class="st">"Colored by Fruit Type"</span>,</span>
-<span id="cb8-7"><a href="#cb8-7"></a>       <span class="at">x =</span> <span class="st">"NMDS1"</span>, <span class="at">y =</span> <span class="st">"NMDS2"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>Finally, we can output our plot</p>
-</div>
-</section>
-<section id="step-3---shotgun-metagenomics.-9" class="slide level2">
-<h2>Step 3 - Shotgun Metagenomics.</h2>
-<h3 id="analysis-of-microbiota-data---outputting-this">Analysis of microbiota data - Outputting this</h3>
-<div class="column" style="width:40%;">
-<div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a><span class="co"># Let's get our bacteria dataframe again</span></span>
-<span id="cb9-2"><a href="#cb9-2"></a><span class="fu">library</span>(vegan)</span>
-<span id="cb9-3"><a href="#cb9-3"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb9-4"><a href="#cb9-4"></a></span>
-<span id="cb9-5"><a href="#cb9-5"></a>bacteria_df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb9-6"><a href="#cb9-6"></a>  <span class="at">Klebsiella =</span> <span class="fu">c</span>(<span class="fl">0.75</span>, <span class="fl">0.25</span>, <span class="fl">0.5</span>, <span class="fl">0.7</span>, <span class="fl">0.3</span>, <span class="fl">0.75</span>),</span>
-<span id="cb9-7"><a href="#cb9-7"></a>  <span class="at">Pantonea =</span> <span class="fu">c</span>(<span class="fl">0.15</span>, <span class="fl">0.50</span>, <span class="fl">0.05</span>, <span class="fl">0.03</span>, <span class="fl">0.02</span>, <span class="fl">0.05</span>),</span>
-<span id="cb9-8"><a href="#cb9-8"></a>  <span class="at">Commensalibacter =</span> <span class="fu">c</span>(<span class="fl">0.10</span>, <span class="fl">0.02</span>, <span class="fl">0.01</span>, <span class="fl">0.01</span>, <span class="fl">0.01</span>, <span class="fl">0.01</span>),</span>
-<span id="cb9-9"><a href="#cb9-9"></a>  <span class="at">Serratia =</span> <span class="fu">c</span>(<span class="fl">0.01</span>, <span class="fl">0.05</span>, <span class="fl">0.01</span>, <span class="fl">0.01</span>, <span class="fl">0.02</span>, <span class="fl">0.01</span>),</span>
-<span id="cb9-10"><a href="#cb9-10"></a>  <span class="at">Spinghobacterium =</span> <span class="fu">c</span>(<span class="fl">0.01</span>, <span class="fl">0.15</span>, <span class="fl">0.01</span>, <span class="fl">0.02</span>, <span class="fl">0.01</span>, <span class="fl">0.01</span>),</span>
-<span id="cb9-11"><a href="#cb9-11"></a>  <span class="at">Acinetobacter =</span> <span class="fu">c</span>(<span class="fl">0.02</span>, <span class="fl">0.01</span>, <span class="fl">0.01</span>, <span class="fl">0.01</span>, <span class="fl">0.5</span>, <span class="fl">0.01</span>)</span>
-<span id="cb9-12"><a href="#cb9-12"></a>)</span>
-<span id="cb9-13"><a href="#cb9-13"></a></span>
-<span id="cb9-14"><a href="#cb9-14"></a><span class="co"># Use metaMDS to generate the ordination with lowest stress</span></span>
-<span id="cb9-15"><a href="#cb9-15"></a><span class="fu">invisible</span>(<span class="fu">capture.output</span>(</span>
-<span id="cb9-16"><a href="#cb9-16"></a>  nmds <span class="ot">&lt;-</span> <span class="fu">metaMDS</span>(bacteria_df, <span class="at">distance =</span> <span class="st">"bray"</span>, <span class="at">k =</span> <span class="dv">2</span>, <span class="at">trymax =</span> <span class="dv">100</span>)</span>
-<span id="cb9-17"><a href="#cb9-17"></a>))</span>
-<span id="cb9-18"><a href="#cb9-18"></a></span>
-<span id="cb9-19"><a href="#cb9-19"></a><span class="co"># Extract site scores</span></span>
-<span id="cb9-20"><a href="#cb9-20"></a>nmds_scores <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(<span class="fu">scores</span>(nmds, <span class="at">display =</span> <span class="st">"sites"</span>))</span>
-<span id="cb9-21"><a href="#cb9-21"></a></span>
-<span id="cb9-22"><a href="#cb9-22"></a><span class="co"># Add fruit names</span></span>
-<span id="cb9-23"><a href="#cb9-23"></a>nmds_scores<span class="sc">$</span>Fruit <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Argan"</span>, <span class="st">"Peach"</span>, <span class="st">"Apricot"</span>, <span class="st">"Grapefruit"</span>, <span class="st">"Orange"</span>, <span class="st">"Tangerine"</span>)</span>
-<span id="cb9-24"><a href="#cb9-24"></a></span>
-<span id="cb9-25"><a href="#cb9-25"></a><span class="co"># Plot the NMDS results</span></span>
-<span id="cb9-26"><a href="#cb9-26"></a>nmds_plot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(nmds_scores,</span>
-<span id="cb9-27"><a href="#cb9-27"></a>                    <span class="fu">aes</span>(<span class="at">x =</span> NMDS1, <span class="at">y =</span> NMDS2, <span class="at">colour =</span> Fruit)) <span class="sc">+</span></span>
-<span id="cb9-28"><a href="#cb9-28"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">4</span>) <span class="sc">+</span></span>
-<span id="cb9-29"><a href="#cb9-29"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
-<span id="cb9-30"><a href="#cb9-30"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"NMDS Plot of Bacterial Composition"</span>,</span>
-<span id="cb9-31"><a href="#cb9-31"></a>       <span class="at">subtitle =</span> <span class="st">"Colored by Fruit Type"</span>,</span>
-<span id="cb9-32"><a href="#cb9-32"></a>       <span class="at">x =</span> <span class="st">"NMDS1"</span>, <span class="at">y =</span> <span class="st">"NMDS2"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-3"><a href="#cb2-3"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb2-4"><a href="#cb2-4"></a></span>
+<span id="cb2-5"><a href="#cb2-5"></a>bacteria_df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb2-6"><a href="#cb2-6"></a>  <span class="at">Klebsiella =</span> <span class="fu">c</span>(<span class="fl">0.75</span>, <span class="fl">0.25</span>, <span class="fl">0.5</span>, <span class="fl">0.7</span>, <span class="fl">0.3</span>, <span class="fl">0.75</span>),</span>
+<span id="cb2-7"><a href="#cb2-7"></a>  <span class="at">Pantonea =</span> <span class="fu">c</span>(<span class="fl">0.15</span>, <span class="fl">0.50</span>, <span class="fl">0.05</span>, <span class="fl">0.03</span>, <span class="fl">0.02</span>, <span class="fl">0.05</span>),</span>
+<span id="cb2-8"><a href="#cb2-8"></a>  <span class="at">Commensalibacter =</span> <span class="fu">c</span>(<span class="fl">0.10</span>, <span class="fl">0.02</span>, <span class="fl">0.01</span>, <span class="fl">0.01</span>, <span class="fl">0.01</span>, <span class="fl">0.01</span>),</span>
+<span id="cb2-9"><a href="#cb2-9"></a>  <span class="at">Serratia =</span> <span class="fu">c</span>(<span class="fl">0.01</span>, <span class="fl">0.05</span>, <span class="fl">0.01</span>, <span class="fl">0.01</span>, <span class="fl">0.02</span>, <span class="fl">0.01</span>),</span>
+<span id="cb2-10"><a href="#cb2-10"></a>  <span class="at">Spinghobacterium =</span> <span class="fu">c</span>(<span class="fl">0.01</span>, <span class="fl">0.15</span>, <span class="fl">0.01</span>, <span class="fl">0.02</span>, <span class="fl">0.01</span>, <span class="fl">0.01</span>),</span>
+<span id="cb2-11"><a href="#cb2-11"></a>  <span class="at">Acinetobacter =</span> <span class="fu">c</span>(<span class="fl">0.02</span>, <span class="fl">0.01</span>, <span class="fl">0.01</span>, <span class="fl">0.01</span>, <span class="fl">0.5</span>, <span class="fl">0.01</span>)</span>
+<span id="cb2-12"><a href="#cb2-12"></a>)</span>
+<span id="cb2-13"><a href="#cb2-13"></a></span>
+<span id="cb2-14"><a href="#cb2-14"></a><span class="co"># Use metaMDS to generate the ordination with lowest stress</span></span>
+<span id="cb2-15"><a href="#cb2-15"></a><span class="fu">invisible</span>(<span class="fu">capture.output</span>(</span>
+<span id="cb2-16"><a href="#cb2-16"></a>  nmds <span class="ot">&lt;-</span> <span class="fu">metaMDS</span>(bacteria_df, <span class="at">distance =</span> <span class="st">"bray"</span>, <span class="at">k =</span> <span class="dv">2</span>, <span class="at">trymax =</span> <span class="dv">100</span>)</span>
+<span id="cb2-17"><a href="#cb2-17"></a>))</span>
+<span id="cb2-18"><a href="#cb2-18"></a></span>
+<span id="cb2-19"><a href="#cb2-19"></a><span class="co"># Extract site scores</span></span>
+<span id="cb2-20"><a href="#cb2-20"></a>nmds_scores <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(<span class="fu">scores</span>(nmds, <span class="at">display =</span> <span class="st">"sites"</span>))</span>
+<span id="cb2-21"><a href="#cb2-21"></a></span>
+<span id="cb2-22"><a href="#cb2-22"></a><span class="co"># Add fruit names</span></span>
+<span id="cb2-23"><a href="#cb2-23"></a>nmds_scores<span class="sc">$</span>Fruit <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Argan"</span>, <span class="st">"Peach"</span>, <span class="st">"Apricot"</span>, <span class="st">"Grapefruit"</span>, <span class="st">"Orange"</span>, <span class="st">"Tangerine"</span>)</span>
+<span id="cb2-24"><a href="#cb2-24"></a></span>
+<span id="cb2-25"><a href="#cb2-25"></a><span class="co"># Plot the NMDS results</span></span>
+<span id="cb2-26"><a href="#cb2-26"></a>nmds_plot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(nmds_scores,</span>
+<span id="cb2-27"><a href="#cb2-27"></a>                    <span class="fu">aes</span>(<span class="at">x =</span> NMDS1, <span class="at">y =</span> NMDS2, <span class="at">colour =</span> Fruit)) <span class="sc">+</span></span>
+<span id="cb2-28"><a href="#cb2-28"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">4</span>) <span class="sc">+</span></span>
+<span id="cb2-29"><a href="#cb2-29"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb2-30"><a href="#cb2-30"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"NMDS Plot of Bacterial Composition"</span>,</span>
+<span id="cb2-31"><a href="#cb2-31"></a>       <span class="at">subtitle =</span> <span class="st">"Colored by Fruit Type"</span>,</span>
+<span id="cb2-32"><a href="#cb2-32"></a>       <span class="at">x =</span> <span class="st">"NMDS1"</span>, <span class="at">y =</span> <span class="st">"NMDS2"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <div class="column" style="width:60%;">
 <div class="cell">
 <div class="cell-output-display">
-<p><img data-src="index_files/figure-revealjs/unnamed-chunk-11-1.png" width="960"></p>
+<p><img data-src="index_files/figure-revealjs/unnamed-chunk-3-1.png" width="960"></p>
 </div>
 </div>
 </div>
