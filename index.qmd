@@ -2,33 +2,65 @@
 title: "Lab Presentation"
 author: "Katie Millar"
 date: "26-02-2026"
-format: 
+
+format:
   revealjs:
     theme: solarized
-    scrollable: true
     slide-number: true
+    progress: true
     chalkboard: true
-    logo: /assets/dpcfd_logo.png
-    footer: "Katie Millar | PhD Student | "
+    scrollable: true
+    logo: images/QR.png
+    footer: "Katie Millar | PhD Student"
+
+css: style.css
+
+title-slide-attributes:
+  data-background-image: "images/tephritid.png"
+  data-background-size: cover
 ---
 
-## The lab presentation today.
+## The QR code to scan if you haven't accessed the quiz:
 
--   The current progress, and a background to my work on **"Host-microbe symbioses in Tephritid pest insects"**.
+![](images/QR.png){width="30%"}
+
+## Today's Lab Meeting
 
 ::: fragment
--   This will be an interactive, please scan the QR code, or follow the link on the Teams chat.
+**Today I'll share:**
+
+-   Work related to my PhD project: **Host--microbe symbioses in Tephritid pest insects**.
+
+-   Including my current progress.
+
+-   A background to my project including key techniques I'll use during my PhD, including **microbiota analysis.**
+:::
+
+## What you need to do:
+
+**This will be interactive!**
+
+-   Please **QR code** or follow the **Teams chat** to participate.
+
+::: fragment
+**Team work!!**
+
+-   You should have received either a *Medfly* or *Drosophila* sticker, this is your team **team**.
 :::
 
 ::: fragment
--   You will have been given a Medfly or a Drosophila sticker, this is your team.
+**Prizes...**
+
+-   To ensure no one feels left out, there will be prizes for all.
+
+-   Both prizes for the winning team, and the runners up.
+
+-   One way or another, you will all feel like winners.
+
+![](images/winners.png){width="24%"}
 :::
 
-::: fragment
--   The team with the winning points? The ![](images/winners.png){width="10%"}
-:::
-
-## Fruit flies?
+## Beginning with fruit flies. 
 
 ::: fragment
 -   Within fruit flies, we have the two families; Drosophilidae, ![](images/drosophilidae.png){width="30%"}
@@ -38,183 +70,293 @@ format:
 and Tephritidae ![](images/tephritidae.png){width="40%"}
 :::
 
-## Fruit flies?
+## The fruit fly families.
 
--   Drosophilidae, is arguably what the 'average person' would think of when they say fruit flies. ![](images/drosophila.png){width="40%"}
+-   **Drosophilidae** --- what most people think of as "fruit flies"\
+    ![](images/drosophila.png){width="40%"}
 
 ::: fragment
--   Tephritidiae, on the other hand are slightly less common. I think?
+-   **Tephritidae** are less common, but very *important* agriculturally.
 :::
 
-## Tephritids
-
-### A big background.
-
-![](images/medfly_1.jpg){width="70%"}
+## Background
 
 ::: fragment
-```         
--   They are actually sometimes called peacock flies, because they are colourful xD
-```
+-   Sometimes called **peacock flies** due to their colorful patterns.
 :::
 
 ::: fragment
--   Tephritidae contain most of the flies that cause economic damage to crops because some feed on **living tissue**, they go after fresh fruits, plants, etc.
+-   Most Tephritids cause **economic damage to crops** because some feed on **living tissue**;targeting fresh fruits, vegetables, and plants.
 :::
 
 ::: fragment
--   They do this through their ovipositor. Its larvae feed and develop on many deciduous, subtropical, and tropical fruits and some vegetables.
+-   They use their **ovipositor** to lay eggs; which then develop into larvae in many different fruits.
 :::
 
-## Tephritids
-
-### The Medfly.
+## Tephritids: The Medfly
 
 ::: fragment
--   A common Tephritid, is the Mediterranean Fruit Fly (Medfly), ranked first among economically important fruit fly species.
-:::
-
-::: fragment
--   Originated in sub-Suharan Africa, it can tolerate cooler climates better than most other tropical fruit flies.
+![](images/medfly_1.jpg){width="60%"}
 :::
 
 ::: fragment
--   Eradication efforts may be extremely expensive.
-:::
-
-## Quiz question time!
-
--   Please follow the first task, answer the questions don't say your total at the end.
-
-    -   Navigation tips:
-
--   Don't refresh the page, you will lose your score.
-
-## How we are looking at "Host-microbe symbioses in Tephritid pest insects"
-
-::: fragment
--   
-
-    1.  Surface sterilisation of Medflies.
+-   **Mediterranean Fruit Fly (Medfly)** is a common Tephritid and ranked first among economically important fruit flies.
 :::
 
 ::: fragment
--   
-
-    2.  Gut dissection of Medflies.
+-   Originated in **sub-Saharan Africa**, but tolerates cooler climates better than most tropical fruit flies.
 :::
 
 ::: fragment
--   
-
-    3.  Can we do shotgun metagenomics in Medflies?
+-   Eradication efforts are extremely costly.
 :::
 
-## 1. Surface sterilisation of Medflies.
+## Quiz question time - Round 1!
 
-### Why do we surface sterilise?
+-   It is now time for the first round of the quiz!
 
 ::: fragment
--   Surface sterilisation is the process of washing the surface of the Medfly, dunking them.
+-   Here are some tips and rules:
+
+    -   Answer the questions as you go along, then click Submit.
+
+    -   For each question, you will be told if your answer is incorrect or correct, do not try again - this is cheating.
+
+    -   Do not refresh the page, this will reset everything and is cheating.
+
+    -   When you have answered all questions, at the bottom of your page, your total points for this round will be on your screen. Please share this, and do not cheat!!
 :::
 
-::: fragment
--   We want to know about the microbiota of the Medfly, but if we analyse the microbiota without washing it, we might be getting it's environment.
-:::
-
-## Step 1 - Surface sterilisations
-
-### How should we surface sterilise?
+## How I have been understanding **Host--microbe symbioses in Tephritid pest insects**
 
 ::: fragment
--   Ethanol ? ![](images/washfly.png){width="20%"}
-:::
-
-::: fragment
--   Bleach ? ![](images/bleachfly.png){width="20%"}
+1.  Surface sterilisation of Medflies.
 :::
 
 ::: fragment
--   Ethanol and bleach are both effective at killing microbes, but **bleach** can actually denature DNA.
+2.  Dissection of Medfly guts.
 :::
 
 ::: fragment
--   So if ethanol allows DNA to remain, the DNA of the microbes could still be present. You blend this all up, there might still be external surface microbes.
+3.  Microbial analysis techniques.
+:::
+
+## What is surface sterilisation?
+
+::: fragment
+-   Surface sterilisation removes microbes present on the external surface of the Medfly.
+:::
+
+::: fragment
+-   The aim is to analyse the internal microbiota (gut microbiota), not whatever it has been chilling around in.\
+:::
+
+::: fragment
+-   If we do not wash the flies, DNA from environmental microbes may contaminate the sample.\
+:::
+
+## Choosing a sterilisation method.
+
+::: fragment
+-   Ethanol ![](images/washfly.png){width="60%"}
+:::
+
+::: fragment
+-   Bleach ![](images/bleachfly.png){width="60%"}
+:::
+
+::: fragment
+-   Both ethanol and bleach will kill microbes.
+:::
+
+::: fragment
+-   However, bleach denatures DNA, while ethanol does not. So if ethanol is used alone, DNA from external microbes may remain, even if the microbes are dead.
+:::
+
+::: fragment
+-   For example, if a whole fly was surface sterilised with ethanol, and the whole fly was homogenised, the external DNA would also most likely be in the sample.
 
 ![](images/blender.png){width="20%"}
 :::
 
-## Step 1 - Surface sterilisations
+## Evidence from other studies.
 
-### How should we surface sterilise?
+::: fragment
+A study by Binetruy et al. (2019) evaluated sterilisation methods in ticks
+:::
+
+::: fragment
+Their results showed that
+
+-   Ethanol based sterilisation did not fully remove external bacterial DNA.
+-   Bleach based methods were more effective at elimninating external contamination.
+:::
 
 ::: fragment
 ![](images/surface.png){width="50%"}
 :::
 
+## Choosing a protocol
+
 ::: fragment
-<small> Binetruy et al. (2019) looked into methods of surface sterilisation in ticks. When testing bleach and ethanol, showed that when looking at external microbiome, revealed that ethanol-based surface sterilisation method is inefficient to eliminate the DNA of external bacteria. </small>
+After using the above paper as a source, we developed a protocol that would involve testing the sterility of the fly using incubated LB plates.
+:::
+
+::: fragment
+We decided on a set protocol:
+
+- 1 min 30 sec bleach in bijou tube, mixing on vortex — remove
+- 30 sec PBS, mixing on vortex — remove
+- 30 sec PBS, mixing on vortex — remove
+- 30 sec PBS, mixing on vortex — remove
+:::
+
+
+## How it went
+
+::: fragment
+- Leaving the fly in bleach for longer than 1:30–2:00 may break appendages
+- Wash must be under 1 min to avoid gut exposure ruining experiment
+:::
+
+
+## Results
+
+::: fragment
+This also seemed to result in flies that were not actually clean...
+:::
+
+::: fragment
+![](images/dirty.png){width="100%"}
+:::
+::: column
+![](images/clean.png){width="100%"}
+:::
+:::
+:::
+
+
+## Table of Results
+
+So after many trials and errors:
+
+```{r}
+library(readr)
+library(knitr)
+library(kableExtra)
+
+sterilisation <- read_csv("SurfaceSterilisation_Experiments.csv")
+
+kable(sterilisation) %>%
+  kable_styling(font_size = 12)
+```
+
+::: fragment
+-   We eventually found that using filter paper to on top of the bijou tube, allowing the solution to drain through so the flies could be more easily picked up, actually resulted in having sterile flies, and clean plates.
 :::
 
 ## Quiz question time!
 
 Please do this.
 
-## Step 2 - Gut Dissections.
-
-### Guts vs. Whole flies
+## Guts vs. Whole flies
 
 ::: fragment
 -   In insect microbiota studies, studies usually vary whether using the whole gut, or the whole fly to analyse the microbiota.
 :::
 
 ::: fragment
--   While some studies have shown that there is no difference between using the whole gut or the whole fly,
+-   Some studies have shown that there is no difference between using the whole gut or the whole fly, but there is still argument that you're missing a lot with getting whole fly bacteria, rather than just gut bacteria.
 :::
 
 ::: fragment
--   Had to know how to properly do these.
+-   Even if flies are surface-sterilised, whole-fly samples may still include microbes from tissues like the reproductive organs, this could dilute the presence of actual gut bacteria. Some studies have even shown that in Tephritids, there are differences between gut and reproductive organs.
 :::
 
 ::: fragment
--   In sterile conditions.
+-   We decided to focus on just guts, and not whole flies.
 :::
-
-## Step 2 - Gut Dissections.
-
-### Understanding the Tephritid gut.
 
 ::: fragment
--   In the gut, there is a Medfly gut.
+![](images/dissection.png)
 :::
+
+
+## Gut Dissection
+
+-   Foregut
+-   Midgut
+-   Hindgut
+
+
+
+::: fragment
+![](images/dissection.png){width="40%"}
+:::
+
+## Understanding the Medfly gut.
 
 ::: fragment
 -   It has the foregut, midgut, and hindgut.
 :::
 
 ::: fragment
--   Another reason for reduced microbial niches could be that foregut and hindgut regions are shed during moulting. During metamorphosis, the whole larval gut is substituted by a new adult gut.
+-   During metamorphosis, the entire larval gut is broken down and replaced with a newly formed adult gut.
+-   This can influence forms of transmission throughout life stages.
+:::
+
+## Understanding the Medfly gut.
+
+::: fragment
+-   It has the foregut, midgut, and hindgut.
+:::
+
+::: fragment
+-   During metamorphosis, the entire larval gut is broken down and replaced with a newly formed adult gut.
+-   This can influence forms of transmission throughout life stages.
+:::
+
+## Modes of microbial transmission
+
+::: fragment
+-   There are 3 modes of microbial transmission.
+:::
+
+::: fragment
+-   **Vertical transmission** -- microbes are passed directly from parent to offspring (via the egg surface or reproductive tissues).
+:::
+
+::: fragment
+-   **Horizontal transmission** -- microbes are acquired from other individuals (via mating, shared feeding sites etc).
+:::
+
+::: fragment
+-   **Environmental transmission** -- microbes are acquired from the surrounding environment (host fruit, soil, or artificial diet substrate in the lab).
+:::
+
+::: fragment
+-   All of these together are referred to as **mixed modes of microbial transmission**.
+:::
+
+::: fragment
+-   In Medfly, it has been **suggested** that horizontal transmission occurs.
+-   Larvae have been shown to shed bacteria into the fruit substrate, and other larvae may acquire those microbes from the shared environment (the fruit).
+:::
+
+::: fragment
+-   However, similar to vertical transmission, this has not been directly proven.
+-   This could be tested using a high-throughput sequencing approach to identify identical bacterial strains shared between hosts.
+:::
+
+::: fragment
+-   The current data on transmission in Medfly doesn't truly show that bacteria between hosts are identical.
 :::
 
 ## Quiz question time!
 
 Please do this.
 
-## Step 3 - Shotgun Metagenomics.
-
-### What is shotgun metagenomics?
-
-::: fragment
--   In sequencing of the microbiota, the main methods are **amplicon metagenomics** and **shotgun metagenomics**.
-:::
-
-::: fragment
--   Amplicon metagenomics
-:::
-
-## Step 3 - Shotgun Metagenomics.
-
-### Analysis of microbiota data - Diversity Metrics
+## Diversity Metrics
 
 ::: fragment
 -   In analysis of the microbiota, there are two diversity metrics. These are **Alpha Diversity** and **Beta Diversity**.
@@ -232,12 +374,14 @@ Please do this.
 -   In this lab presentation, we will focus on Beta Diversity, and specifically a method called **Bray-Curtis Dissimilarity**
 :::
 
-## Step 3 - Shotgun Metagenomics.
-
-### Analysis of microbiota data - Bray Curtis Disimiliarity
+## Diversity Metrics - Bray Curtis Disimiliarity
 
 ::: fragment
--   Bray-Curtis Dissimilarity can be described as a statistic used to quantify the **dissimilarity** in composition of species between **two** different sites. It works by a formula outputting a value between 0 and 1, with 0 meaning the sites are exactly the same, to very similar, and 1 being they are very dissimilar.
+-   Bray-Curtis Dissimilarity can be described as a statistic used to quantify the **dissimilarity** in composition of species between **two** different sites.
+
+-   It works by a formula outputting a value between 0 and 1, with 0 meaning the sites are exactly the same, to very similar, and 1 being they are very dissimilar.
+
+-   It works on species abundance.
 :::
 
 ::: fragment
@@ -248,9 +392,7 @@ knitr::include_graphics("images/mathsanalysis.png")
 ```
 :::
 
-## Step 3 - Shotgun Metagenomics.
-
-### Analysis of microbiota data - Bray-Curtis Dissimilarity in action
+## Analysis of microbiota data - Bray-Curtis Dissimilarity in action
 
 ::: fragment
 -   Lets go through an example of how **Bray-Curtis Dissimilarity** works, using data from [Darrington et al. (2022)](https://www.microbiologyresearch.org/content/journal/mgen/10.1099/mgen.0.000801#tab2).
@@ -289,9 +431,7 @@ knitr::include_graphics("images/mathsanalysis.png")
 :::
 :::
 
-## Step 3 - Shotgun Metagenomics.
-
-### Analysis of microbiota data: Calculating Bray-Curtis Dissimilarity
+## Analysis of microbiota data: Calculating Bray-Curtis Dissimilarity
 
 C~ij~ = the sum of **lower** counts found at both sites
 
@@ -341,9 +481,7 @@ $$
 BC_{ij} = 1 - 0.4 = \mathbf{0.6}
 $$
 
-## Step 3 - Shotgun Metagenomics.
-
-### Analysis of microbiota data: Calculating Bray-Curtis Dissimilarity
+## Analysis of microbiota data: Calculating Bray-Curtis Dissimilarity
 
 ::: fragment
 **Interpretation:**
@@ -363,9 +501,7 @@ knitr::include_graphics("images/braycurtisscale.png")
 -   From the scale, we can conclude that two samples are not similar, not are they massively dissimilar. But they are more dissimilar than similar! You might be able to see this makes somewhat sense by going back to the dataframe. To put it simply, a Bray-Curtis dissimilarity of **0.6** indicates moderate dissimilarity between the two sites.
 :::
 
-## Step 3 - Shotgun Metagenomics.
-
-### Analysis of microbiota data - NMDS
+## Analysis of microbiota data: NMDS
 
 ::: fragment
 -   NMDS (Non-metric Multidimensional Scaling) is an **ordination** technique, which is used to visualise **similarities** or **dissimilarities** in data.
@@ -379,9 +515,36 @@ knitr::include_graphics("images/braycurtisscale.png")
 -   **NMDS** is a non-linear method. It doesn't preserve actual distances between samples, but instead maintains the **rank order of those distances**, which is especially useful when working with complex samples, such as in ecological or microbial community data.
 :::
 
-## Step 3 - Shotgun Metagenomics.
+## Analysis of microbiota data - Let's go through the steps
 
-### Analysis of microbiota data - Let's go through the steps
+::: fragment
+1.  **Calculate a dissimilarity matrix**\
+    Use a dissimilarity measure (e.g., *Bray-Curtis*) to quantify differences between all sample pairs based on multivariate data (e.g., species abundance).
+
+2.  **Rank the dissimilarity values**\
+    Convert the dissimilarity matrix into *ranked distances*, from most similar to least similar.
+
+3.  **Initialise with random coordinates**\
+    I an a new 2D space, put samples at **random** starting positions in a low-dimensional space.
+
+4.  **Calculate Euclidean distances**\
+    Measure the *Euclidean distances* between all pairs of these random points in the reduced space.
+
+5.  **Rank the Euclidean distances**\
+    Rank these distances like done with the original dissimilarity differences in **Step 2**.
+
+6.  **Compare ranked distances using Kruskal's stress**\
+    Use Kruskal's stress function to compare the ranked dissimilarities with the ranked Euclidean distances. This metric quantifies how well the configuration preserves the order of the original dissimilarities.
+
+7.  **Iteratively minimise stress**\
+    Adjust the configuration repeatedly to *minimise stress*. If the stress is too high, this will be repeated new random configurations.
+
+8.  **Obtain the NMDS solution**\
+    The configuration with the *lowest stress* provides the final *NMDS scores* --- a best-fit representation of the rank-based dissimilarities in reduced space.
+
+9.  **Visualise the results**\
+    Plot the NMDS scores in 2D (or 3D) space, where the *distance between points* reflects the *relative dissimilarity* between samples.
+:::
 
 ::: fragment
 We can do this in R... We will need these two packages
@@ -409,14 +572,13 @@ bacteria_df <- data.frame(
 :::
 
 ::: fragment
-This part will need a bit more breaking downis 
+This part will need a bit more breaking downis
 
 ```{r, echo=TRUE, message=FALSE, warning=FALSE,  eval=F, echo = T }
 invisible(capture.output(
   nmds <- metaMDS(bacteria_df, distance = "bray", k = 2, trymax = 100)
 ))
 ```
-
 
 The `metaMDS()` function:
 
@@ -426,20 +588,16 @@ The `metaMDS()` function:
 
 -   We have set `k = 2` because we want to reduce the data to two dimensions (simplifying the data).
 
--   The `trymax` parameter, set to 100 increases the number of "random starts" to help the algorithm find a stable, low-stress solution (stress is something we will go into more detail on in a bit).
+-   The `trymax` parameter, set to 100 increases the number of "random starts" to help the algorithm find a stable, "low-stress" solution.
 :::
 
-
-## Step 3 - Shotgun Metagenomics.
-
-### Analysis of microbiota data - getting the plot
-
-
+## Analysis of microbiota data - getting the plot
 
 ::: fragment
 ```{r, echo=TRUE, message=FALSE, warning=FALSE,  eval=F, echo = T }
 nmds_scores <- as.data.frame(scores(nmds, display = "sites"))
 ```
+
 ```{r}
 nmds_scores <- data.frame(
   NMDS1 = c(-0.3322709,
@@ -459,17 +617,16 @@ nmds_scores <- data.frame(
 nmds_scores
 ```
 
-
-This is a process of extracting the site scores, for us - the site is the fruit which the flies are on 
-so based off the nmds values generated above, it will extract these ordination scores 
-::: 
+This is a process of extracting the site scores, for us - the site is the fruit which the flies are on so based off the nmds values generated above, it will extract these ordination scores
+:::
 
 ::: fragment
 ```{r, echo=TRUE, message=FALSE, warning=FALSE,  eval=F, echo = T }
 nmds_scores$Fruit <- c("Argan", "Peach", "Apricot", "Grapefruit", "Orange", "Tangerine")
 ```
-This part simply assigns our scores to the fruits 
-::: 
+
+This part simply assigns our scores to the fruits
+:::
 
 ::: fragment
 ```{r, echo=TRUE, message=FALSE, warning=FALSE,  eval=F, echo = T }
@@ -483,21 +640,11 @@ nmds_plot <- ggplot(nmds_scores,
        x = "NMDS1", y = "NMDS2")
        
 ```
-Finally, we can output our plot 
-::: 
 
+Finally, we can output our plot
+:::
 
-
-
-
-
-
-
-
-
-## Step 3 - Shotgun Metagenomics.
-
-### Analysis of microbiota data - Outputting this
+## Analysis of microbiota data - Outputting this
 
 ::: {.column width="40%"}
 ```{r, echo=TRUE, message=FALSE, warning=FALSE,  eval=F, echo = T }
@@ -516,7 +663,7 @@ bacteria_df <- data.frame(
 
 # Use metaMDS to generate the ordination with lowest stress
 invisible(capture.output(
-  nmds <- metaMDS(bacteria_df, distance = "bray", k = 2, trymax = 100)
+  nmds <- c(bacteria_df, distance = "bray", k = 2, trymax = 100)
 ))
 
 # Extract site scores

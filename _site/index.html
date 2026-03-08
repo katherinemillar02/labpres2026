@@ -97,6 +97,7 @@
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto.css">
+  <link rel="stylesheet" href="style.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -388,12 +389,15 @@
       margin-right: 0; 
     }
   </style>
+  
+  <script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+  <link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" class="quarto-title-block center">
+<section id="title-slide" data-background-image="images/tephritid.png" data-background-size="cover" class="quarto-title-block center">
   <h1 class="title">Lab Presentation</h1>
 
 <div class="quarto-title-authors">
@@ -406,29 +410,45 @@ Katie Millar
 
   <p class="date">2028-02-02</p>
 </section>
-<section id="the-lab-presentation-today." class="slide level2">
-<h2>The lab presentation today.</h2>
-<ul>
-<li>The current progress, and a background to my work on <strong>“Host-microbe symbioses in Tephritid pest insects”</strong>.</li>
-</ul>
+<section id="the-qr-code-to-scan-if-you-havent-accessed-the-quiz" class="slide level2">
+<h2>The QR code to scan if you haven’t accessed the quiz:</h2>
+
+<img data-src="images/QR.png" style="width:30.0%" class="r-stretch"></section>
+<section id="todays-lab-meeting" class="slide level2">
+<h2>Today’s Lab Meeting</h2>
 <div class="fragment">
+<p><strong>Today I’ll share:</strong></p>
 <ul>
-<li>This will be an interactive, please scan the QR code, or follow the link on the Teams chat.</li>
-</ul>
-</div>
-<div class="fragment">
-<ul>
-<li>You will have been given a Medfly or a Drosophila sticker, this is your team.</li>
-</ul>
-</div>
-<div class="fragment">
-<ul>
-<li>The team with the winning points? The <img data-src="images/winners.png" style="width:10.0%"></li>
+<li><p>Work related to my PhD project: <strong>Host–microbe symbioses in Tephritid pest insects</strong>.</p></li>
+<li><p>Including my current progress.</p></li>
+<li><p>A background to my project including key techniques I’ll use during my PhD, including <strong>microbiota analysis.</strong></p></li>
 </ul>
 </div>
 </section>
-<section id="fruit-flies" class="slide level2">
-<h2>Fruit flies?</h2>
+<section id="what-you-need-to-do" class="slide level2">
+<h2>What you need to do:</h2>
+<p><strong>This will be interactive!</strong></p>
+<ul>
+<li>Please <strong>QR code</strong> or follow the <strong>Teams chat</strong> to participate.</li>
+</ul>
+<div class="fragment">
+<p><strong>Team work!!</strong></p>
+<ul>
+<li>You should have received either a <em>Medfly</em> or <em>Drosophila</em> sticker, this is your team <strong>team</strong>.</li>
+</ul>
+</div>
+<div class="fragment">
+<p><strong>Prizes…</strong></p>
+<ul>
+<li><p>To ensure no one feels left out, there will be prizes for all.</p></li>
+<li><p>Both prizes for the winning team, and the runners up.</p></li>
+<li><p>One way or another, you will all feel like winners.</p></li>
+</ul>
+<p><img data-src="images/winners.png" style="width:24.0%"></p>
+</div>
+</section>
+<section id="beginning-with-fruit-flies." class="slide level2">
+<h2>Beginning with fruit flies.</h2>
 <div class="fragment">
 <ul>
 <li>Within fruit flies, we have the two families; Drosophilidae, <img data-src="images/drosophilidae.png" style="width:30.0%"></li>
@@ -438,144 +458,2894 @@ Katie Millar
 <p>and Tephritidae <img data-src="images/tephritidae.png" style="width:40.0%"></p>
 </div>
 </section>
-<section id="fruit-flies-1" class="slide level2">
-<h2>Fruit flies?</h2>
+<section id="the-fruit-fly-families." class="slide level2">
+<h2>The fruit fly families.</h2>
 <ul>
-<li>Drosophilidae, is arguably what the ‘average person’ would think of when they say fruit flies. <img data-src="images/drosophila.png" style="width:40.0%"></li>
+<li><strong>Drosophilidae</strong> — what most people think of as “fruit flies”<br>
+<img data-src="images/drosophila.png" style="width:40.0%"></li>
 </ul>
 <div class="fragment">
 <ul>
-<li>Tephritidiae, on the other hand are slightly less common. I think?</li>
+<li><strong>Tephritidae</strong> are less common, but very <em>important</em> agriculturally.</li>
 </ul>
 </div>
 </section>
-<section id="tephritids" class="slide level2">
-<h2>Tephritids</h2>
-<h3 id="a-big-background.">A big background.</h3>
+<section id="background" class="slide level2">
+<h2>Background</h2>
+<div class="fragment">
+<ul>
+<li>Sometimes called <strong>peacock flies</strong> due to their colorful patterns.</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>Most Tephritids cause <strong>economic damage to crops</strong> because some feed on <strong>living tissue</strong>;targeting fresh fruits, vegetables, and plants.</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>They use their <strong>ovipositor</strong> to lay eggs; which then develop into larvae in many different fruits.</li>
+</ul>
+</div>
+</section>
+<section id="tephritids-the-medfly" class="slide level2">
+<h2>Tephritids: The Medfly</h2>
+<div class="fragment">
+<p><img data-src="images/medfly_1.jpg" style="width:60.0%"></p>
+</div>
+<div class="fragment">
+<ul>
+<li><strong>Mediterranean Fruit Fly (Medfly)</strong> is a common Tephritid and ranked first among economically important fruit flies.</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>Originated in <strong>sub-Saharan Africa</strong>, but tolerates cooler climates better than most tropical fruit flies.</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>Eradication efforts are extremely costly.</li>
+</ul>
+</div>
+</section>
+<section id="quiz-question-time---round-1" class="slide level2">
+<h2>Quiz question time - Round 1!</h2>
+<ul>
+<li>It is now time for the first round of the quiz!</li>
+</ul>
+<div class="fragment">
+<ul>
+<li><p>Here are some tips and rules:</p>
+<ul>
+<li><p>Answer the questions as you go along, then click Submit.</p></li>
+<li><p>For each question, you will be told if your answer is incorrect or correct, do not try again - this is cheating.</p></li>
+<li><p>Do not refresh the page, this will reset everything and is cheating.</p></li>
+<li><p>When you have answered all questions, at the bottom of your page, your total points for this round will be on your screen. Please share this, and do not cheat!!</p></li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="how-i-have-been-understanding-hostmicrobe-symbioses-in-tephritid-pest-insects" class="slide level2">
+<h2>How I have been understanding <strong>Host–microbe symbioses in Tephritid pest insects</strong></h2>
+<div class="fragment">
+<ol type="1">
+<li>Surface sterilisation of Medflies.</li>
+</ol>
+</div>
+<div class="fragment">
+<ol start="2" type="1">
+<li>Dissection of Medfly guts.</li>
+</ol>
+</div>
+<div class="fragment">
+<ol start="3" type="1">
+<li>Microbial analysis techniques.</li>
+</ol>
+</div>
+</section>
+<section id="what-is-surface-sterilisation" class="slide level2">
+<h2>What is surface sterilisation?</h2>
+<div class="fragment">
+<ul>
+<li>Surface sterilisation removes microbes present on the external surface of the Medfly.</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>The aim is to analyse the internal microbiota (gut microbiota), not whatever it has been chilling around in.<br>
+</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>If we do not wash the flies, DNA from environmental microbes may contaminate the sample.<br>
+</li>
+</ul>
+</div>
+</section>
+<section id="choosing-a-sterilisation-method." class="slide level2">
+<h2>Choosing a sterilisation method.</h2>
+<div class="fragment">
+<ul>
+<li>Ethanol <img data-src="images/washfly.png" style="width:60.0%"></li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>Bleach <img data-src="images/bleachfly.png" style="width:60.0%"></li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>Both ethanol and bleach will kill microbes.</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>However, bleach denatures DNA, while ethanol does not. So if ethanol is used alone, DNA from external microbes may remain, even if the microbes are dead.</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>For example, if a whole fly was surface sterilised with ethanol, and the whole fly was homogenised, the external DNA would also most likely be in the sample.</li>
+</ul>
+<p><img data-src="images/blender.png" style="width:20.0%"></p>
+</div>
+</section>
+<section id="evidence-from-other-studies." class="slide level2">
+<h2>Evidence from other studies.</h2>
+<div class="fragment">
+<p>A study by Binetruy et al.&nbsp;(2019) evaluated sterilisation methods in ticks</p>
+</div>
+<div class="fragment">
+<p>Their results showed that</p>
+<ul>
+<li>Ethanol based sterilisation did not fully remove external bacterial DNA.</li>
+<li>Bleach based methods were more effective at elimninating external contamination.</li>
+</ul>
+</div>
+<div class="fragment">
+<p><img data-src="images/surface.png" style="width:50.0%"></p>
+</div>
+</section>
+<section id="choosing-a-protocol" class="slide level2">
+<h2>Choosing a protocol</h2>
+<div class="fragment">
+<p>After using the above paper as a source, we developed a protocol that would involve testing the sterility of the fly using incubated LB plates.</p>
+</div>
+<div class="fragment">
+<p>We decided on a set protocol:</p>
+<ul>
+<li>1 min 30 sec bleach in bijou tube, mixing on vortex — remove</li>
+<li>30 sec PBS, mixing on vortex — remove</li>
+<li>30 sec PBS, mixing on vortex — remove</li>
+<li>30 sec PBS, mixing on vortex — remove</li>
+</ul>
+</div>
+</section>
+<section id="how-it-went" class="slide level2">
+<h2>How it went</h2>
+<div class="fragment">
+<ul>
+<li>Leaving the fly in bleach for longer than 1:30–2:00 may break appendages</li>
+<li>Wash must be under 1 min to avoid gut exposure ruining experiment</li>
+</ul>
+</div>
+</section>
+<section id="results" class="slide level2">
+<h2>Results</h2>
+<div class="fragment">
+<p>This also seemed to result in flies that were not actually clean…</p>
+</div>
+<div class="fragment">
+<p><img data-src="images/dirty.png" style="width:100.0%"></p>
+</div>
+<div class="column">
+<p><img data-src="images/clean.png" style="width:100.0%"></p>
+</div>
+<p>::: :::</p>
+</section>
+<section id="table-of-results" class="slide level2">
+<h2>Table of Results</h2>
+<p>So after many trials and errors:</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table" data-quarto-postprocess="true" style="font-size: 12px; margin-left: auto; margin-right: auto;">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Date</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Summary</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Aim</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Plate</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Plate contents</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Wash Number</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Control Plate</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Plate pouring</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Plate spreading/making</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Plate contents autoclaved</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Bleach concentration percentage</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Bleach notes</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Treatment code.</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Flies code (sex/strain).</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Number of flies</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Replicate ID</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Incubation time (hours)</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Incubation temp celsius</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Date plate read</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Short description of plate</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">% of plate covered in bacteria</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Colony morphology</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Image link</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Researcher(s)</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Link to protocol and Benchling lab note entry</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">15/09/2025</td>
+<td style="text-align: left;">Fly washed in bleach for 1 minute then PBS for 30s. PBS wash plated out</td>
+<td style="text-align: left;">Test differential growth of bacteria across 3 consecutive PBS washes</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">PBS wash</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">0.8</td>
+<td style="text-align: left;">Stock bleach was 6-14% calculation assumed upper concentration valid. Stock of unknown age and likely to be less concentrated than stated</td>
+<td style="text-align: left;">15_09_25_1_1</td>
+<td style="text-align: left;">starch_male_6d</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">16/09/2025</td>
+<td style="text-align: left;">One small blodge of growth. As well as sharp white colonies, blodged together.</td>
+<td style="text-align: left;">|20</td>
+<td style="text-align: left;">|Single colonies/lawn</td>
+<td style="text-align: left;">|IMG_5710.jpg</td>
+<td style="text-align: left;">|Katie Millar</td>
+<td style="text-align: left;">|15.09.2025_SS_labnotes</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">15/09/2025</td>
+<td style="text-align: left;">Fly washed in bleach for 1 minute then PBS for 30s. PBS wash plated out</td>
+<td style="text-align: left;">Test differential growth of bacteria across 3 consecutive PBS washes</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">PBS wash</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">0.8</td>
+<td style="text-align: left;">Stock bleach was 6-14% calculation assumed upper concentration valid. Stock of unknown age and likely to be less concentrated than stated</td>
+<td style="text-align: left;">15_09_25_1_2</td>
+<td style="text-align: left;">starch_male_6d</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">16/09/2025</td>
+<td style="text-align: left;">A very large blodge of growth in the center. Lots of colonies blodged together.</td>
+<td style="text-align: left;">|25</td>
+<td style="text-align: left;">|Single colonies/lawn</td>
+<td style="text-align: left;">|IMG_5711.jpg</td>
+<td style="text-align: left;">|Katie Millar</td>
+<td style="text-align: left;">|15.09.2025_SS_labnotes</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">15/09/2025</td>
+<td style="text-align: left;">Fly washed in bleach for 1 minute then PBS for 30s. PBS wash plated out</td>
+<td style="text-align: left;">Test differential growth of bacteria across 3 consecutive PBS washes</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">PBS wash</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">0.8</td>
+<td style="text-align: left;">Stock bleach was 6-14% calculation assumed upper concentration valid. Stock of unknown age and likely to be less concentrated than stated</td>
+<td style="text-align: left;">15_09_25_1_3</td>
+<td style="text-align: left;">starch_male_6d</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">16/09/2025</td>
+<td style="text-align: left;">Maybe some lines of growth, hard to tell.</td>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">IMG_5712.jpg</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">15.09.2025_SS_labnotes</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">15/09/2025</td>
+<td style="text-align: left;">Fly washed in bleach for 1 minute then PBS for 30s. PBS wash plated out</td>
+<td style="text-align: left;">Test differential growth of bacteria across 3 consecutive PBS washes</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">PBS wash</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">0.8</td>
+<td style="text-align: left;">Stock bleach was 6-14% calculation assumed upper concentration valid. Stock of unknown age and likely to be less concentrated than stated</td>
+<td style="text-align: left;">15_09_25_2_1</td>
+<td style="text-align: left;">starch_female_6d</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">16/09/2025</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">IMG_5705.jpg</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">15.09.2025_SS_labnotes</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">15/09/2025</td>
+<td style="text-align: left;">Fly washed in bleach for 1 minute then PBS for 30s. PBS wash plated out</td>
+<td style="text-align: left;">Test differential growth of bacteria across 3 consecutive PBS washes</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">PBS wash</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">0.8</td>
+<td style="text-align: left;">Stock bleach was 6-14% calculation assumed upper concentration valid. Stock of unknown age and likely to be less concentrated than stated</td>
+<td style="text-align: left;">15_09_25_2_2</td>
+<td style="text-align: left;">starch_female_6d</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">16/09/2025</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">IMG_5706.png</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">15.09.2025_SS_labnotes</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">15/09/2025</td>
+<td style="text-align: left;">Fly washed in bleach for 1 minute then PBS for 30s. PBS wash plated out</td>
+<td style="text-align: left;">Test differential growth of bacteria across 3 consecutive PBS washes</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">PBS wash</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">0.8</td>
+<td style="text-align: left;">Stock bleach was 6-14% calculation assumed upper concentration valid. Stock of unknown age and likely to be less concentrated than stated</td>
+<td style="text-align: left;">15_09_25_2_3</td>
+<td style="text-align: left;">starch_female_6d</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">16/09/2025</td>
+<td style="text-align: left;">Large splodge of growth. Lots of small growth slodges surrounding this. Some streaks.</td>
+<td style="text-align: left;">20</td>
+<td style="text-align: left;">Lawn colonies.</td>
+<td style="text-align: left;">IMG_5707.png</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">15.09.2025_SS_labnotes</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">15/09/2025</td>
+<td style="text-align: left;">Sterile PBS only plated, no flies introduced at any time.</td>
+<td style="text-align: left;">Tests that the sterile PBS used for rinsing does not contain bactria.</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">PBS control</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">Yes</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">0.8</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">15_09_25_3_1</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">16/09/2025</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">IMG_5709.png</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">15.09.2025_SS_labnotes</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">15/09/2025</td>
+<td style="text-align: left;">Fly submerged in PBS for 30s. PBS wash plated out</td>
+<td style="text-align: left;">Tests if a plate will pick up dirty PBS</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">PBS wash</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Yes</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">No.</td>
+<td style="text-align: left;">0.8</td>
+<td style="text-align: left;">Stock bleach was 6-14% calculation assumed upper concentration valid. Stock of unknown age and likely to be less concentrated than stated</td>
+<td style="text-align: left;">15_09_25_3_2</td>
+<td style="text-align: left;">starch_male_6d</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">16/09/2025</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">IMG_5708.png</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">15.09.2025_SS_labnotes</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">18/09/2025</td>
+<td style="text-align: left;">Fly washed in bleach for 1 minute then PBS for 30s. PBS wash plated out</td>
+<td style="text-align: left;">Test differential growth of bacteria in PBS before and after bleach. Specifically tests the effiency of old bleach. Replicates are two drops of the same wash.</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">PBS wash</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">0.8</td>
+<td style="text-align: left;">Stock bleach was 6-14% calculation assumed upper concentration valid. Stock of unknown age and likely to be less concentrated than stated</td>
+<td style="text-align: left;">18_09_25_1_1</td>
+<td style="text-align: left;">asg_female_10d</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">19/09/2025</td>
+<td style="text-align: left;">Large splodge of growth in the centre. Leaks out to the side.</td>
+<td style="text-align: left;">50</td>
+<td style="text-align: left;">Lawn colonies.</td>
+<td style="text-align: left;">IMG_5713.png</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">18_09_2025_SS_labnotes</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">18/09/2025</td>
+<td style="text-align: left;">Fly washed in bleach for 1 minute then PBS for 30s. PBS wash plated out</td>
+<td style="text-align: left;">Test differential growth of bacteria in PBS before and after bleach. Specifically tests the effiency of old bleach. Replicates are two drops of the same wash.</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">PBS wash</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">0.8</td>
+<td style="text-align: left;">Stock bleach was 6-14% calculation assumed upper concentration valid. Stock of unknown age and likely to be less concentrated than stated</td>
+<td style="text-align: left;">18_09_25_1_2</td>
+<td style="text-align: left;">asg_female_10d</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">19/09/2025</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">IMG_5714.png</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">18_09_2025_SS_labnotes</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">18/09/2025</td>
+<td style="text-align: left;">Fly washed in bleach for 1 minute then PBS for 30s. PBS wash plated out</td>
+<td style="text-align: left;">Test differential growth of bacteria in PBS before and after bleach. Specifically tests the effiency of new bleach.</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">PBS wash</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">0.8</td>
+<td style="text-align: left;">Stock bleach was 10-15% calculation assumed middle concentration valid. Stock was 1 day old.</td>
+<td style="text-align: left;">18_09_25_2_1</td>
+<td style="text-align: left;">asg_male_10d</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">19/09/2025</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">IMG_5715.png</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">18_09_2025_SS_labnotes</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">18/09/2025</td>
+<td style="text-align: left;">Fly washed in bleach for 1 minute then PBS for 30s. PBS wash plated out</td>
+<td style="text-align: left;">Test differential growth of bacteria in PBS before and after bleach. Specifically tests the effiency of new bleach.</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">PBS wash</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">0.8</td>
+<td style="text-align: left;">Stock bleach was 10-15% calculation assumed middle concentration valid. Stock was 1 day old.</td>
+<td style="text-align: left;">18_09_25_2_2</td>
+<td style="text-align: left;">asg_male_10d</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">19/09/2025</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">IMG_5716.png</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">18_09_2025_SS_labnotes</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">18/09/2025</td>
+<td style="text-align: left;">Unwashed fly submerged in PBS for 30s, PBS wash plated.</td>
+<td style="text-align: left;">Tests if a plate will pick up dirty PBS</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">PBS wash</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">No.</td>
+<td style="text-align: left;">0.8</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">18_09_25_3_1</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">19/09/2025</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">18_09_2025_SS_labnotes</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">18/09/2025</td>
+<td style="text-align: left;">Unwashed fly submerged in PBS for 30s, PBS wash plated.</td>
+<td style="text-align: left;">Tests if a plate will pick up dirty PBS</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">PBS wash</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">No.</td>
+<td style="text-align: left;">0.8</td>
+<td style="text-align: left;">Stock bleach was 10-15% calculation assumed middle concentration valid. Stock was 1 day old.</td>
+<td style="text-align: left;">18_09_25_3_2</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">19/09/2025</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">18_09_2025_SS_labnotes</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">18/09/2025</td>
+<td style="text-align: left;">Sterile PBS only plated, no flies introduced at any time.</td>
+<td style="text-align: left;">Tests if a plate will pick up dirty PBS</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">PBS wash</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">0.8</td>
+<td style="text-align: left;">Stock bleach was 10-15% calculation assumed middle concentration valid. Stock was 1 day old.</td>
+<td style="text-align: left;">18_09_25_4_1</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">19/09/2025</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">IMG_5717.png</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">18_09_2025_SS_labnotes</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">18/09/2025</td>
+<td style="text-align: left;">Sterile PBS only plated, no flies introduced at any time.</td>
+<td style="text-align: left;">Tests if a plate will pick up dirty PBS</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">PBS wash</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">0.8</td>
+<td style="text-align: left;">Stock bleach was 10-15% calculation assumed middle concentration valid. Stock was 1 day old.</td>
+<td style="text-align: left;">18_09_25_4_2</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">19/09/2025</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">IMG_5718.png</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">18_09_2025_SS_labnotes</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">18/09/2025</td>
+<td style="text-align: left;">Dirty fly spread directly over plate.</td>
+<td style="text-align: left;">Tests if LB plate specifically picks up bacteria, directly from fly contact.</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">Fly reminiscence.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">No.</td>
+<td style="text-align: left;">0.8</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">18_09_25_4_2</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">19/09/2025</td>
+<td style="text-align: left;">Bacteria almost completely covering the plate.</td>
+<td style="text-align: left;">80</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">IMG_5719.png</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">18_09_2025_SS_labnotes</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">23/09/2025</td>
+<td style="text-align: left;">Fly washed in bleach for 1 minute then PBS for 30s, then another PBS rinse. PBS is then plated out.</td>
+<td style="text-align: left;">Tests if bleach causes surface sterilisation, and if they are still sterile by the 2nd PBS rinse.</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">PBS wash</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">0.8</td>
+<td style="text-align: left;">Stock bleach was 10-15% calculation assumed middle concentration valid. Stock was 5 days old.</td>
+<td style="text-align: left;">23_09_25_1_1</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">24/09/2025</td>
+<td style="text-align: left;">Medium sized colonies over the plate, and long stripes..</td>
+<td style="text-align: left;">50</td>
+<td style="text-align: left;">Large circles, filamentous</td>
+<td style="text-align: left;">IMG_5728.png</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">23_09_2025_SS_labnnotes</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">23/09/2025</td>
+<td style="text-align: left;">Fly washed in bleach for 1 minute then PBS for 30s, then another PBS rinse. PBS is then plated out.</td>
+<td style="text-align: left;">Tests if bleach causes surface sterilisation, and if they are still sterile by the 2nd PBS rinse.</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">PBS wash</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">0.8</td>
+<td style="text-align: left;">Stock bleach was 10-15% calculation assumed middle concentration valid. Stock was 5 days old.</td>
+<td style="text-align: left;">23_09_25_1_2</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">24/09/2025</td>
+<td style="text-align: left;">Medium sized colonies over the plate, and long streaky stripes..</td>
+<td style="text-align: left;">60</td>
+<td style="text-align: left;">Large circles, filamentous</td>
+<td style="text-align: left;">IMG_5729.png</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">23_09_2025_SS_labnnotes</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">23/09/2025</td>
+<td style="text-align: left;">Unwashed fly submerged in PBS for 30s, PBS wash plated.</td>
+<td style="text-align: left;">Tests if PBS will pick up bacteria from the fly.</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">PBS wash</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">No.</td>
+<td style="text-align: left;">0.8</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">23_09_25_2_1</td>
+<td style="text-align: left;">asg_male_2d</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">24/09/2025</td>
+<td style="text-align: left;">One or two very small colonies</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">Tiny colonies</td>
+<td style="text-align: left;">IMG_5730.png</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">23_09_2025_SS_labnnotes</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">23/09/2025</td>
+<td style="text-align: left;">Unwashed fly submerged in PBS for 30s, PBS wash plated.</td>
+<td style="text-align: left;">Tests if PBS will pick up bacteria from the fly.</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">PBS wash</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">No.</td>
+<td style="text-align: left;">0.8</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">23_09_25_2_2</td>
+<td style="text-align: left;">asg_male_2d</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">24/09/2025</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">IMG_5731.png</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">23_09_2025_SS_labnnotes</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">23/09/2025</td>
+<td style="text-align: left;">Bleached fly put into PBS for 30 seconds.</td>
+<td style="text-align: left;">Tests if bleach kills bacteria on the surface of the fly.</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">PBS wash</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">0.8</td>
+<td style="text-align: left;">Stock bleach was 10-15% calculation assumed middle concentration valid. Stock was 5 days old.</td>
+<td style="text-align: left;">23_09_25_2_3</td>
+<td style="text-align: left;">asg_male_2d</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">24/09/2025</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">IMG_5732.png</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">23_09_2025_SS_labnnotes</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">23/09/2025</td>
+<td style="text-align: left;">Bleached fly put into PBS for 30 seconds.</td>
+<td style="text-align: left;">Tests if bleach kills bacteria on the surface of the fly.</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">PBS wash</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">0.8</td>
+<td style="text-align: left;">Stock bleach was 10-15% calculation assumed middle concentration valid. Stock was 5 days old.</td>
+<td style="text-align: left;">18_09_25_2_4</td>
+<td style="text-align: left;">asg_male_2d</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">24/09/2025</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">IMG_5733.png</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">23_09_2025_SS_labnnotes</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">23/09/2025</td>
+<td style="text-align: left;">Unwashed fly submerged in PBS for 1 minute, PBS wash plated.</td>
+<td style="text-align: left;">Tests if PBS will pick up bacteria from the fly.</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">PBS wash</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">No.</td>
+<td style="text-align: left;">0.8</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">23_09_25_3_1</td>
+<td style="text-align: left;">asg_male_2d</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">24/09/2025</td>
+<td style="text-align: left;">Large splodge of growth.</td>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">Circular growth</td>
+<td style="text-align: left;">IMG_5734.png</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">23_09_2025_SS_labnnotes</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">23/09/2025</td>
+<td style="text-align: left;">Unwashed fly submerged in PBS for 1 minute, PBS wash plated.</td>
+<td style="text-align: left;">Tests if PBS will pick up bacteria from the fly.</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">PBS wash</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">No.</td>
+<td style="text-align: left;">0.8</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">23_09_25_3_2</td>
+<td style="text-align: left;">asg_male_2d</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">24/09/2025</td>
+<td style="text-align: left;">Colonies moprhed together to greate a little shape</td>
+<td style="text-align: left;">8</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">IMG_5735.png</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">23_09_2025_SS_labnnotes</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">23/09/2025</td>
+<td style="text-align: left;">Washed fly submerged in PBS for 1 minute, PBS wash plated.</td>
+<td style="text-align: left;">Tests if bleach kills bacteria on the surface of the fly.</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">PBS wash</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">0.8</td>
+<td style="text-align: left;">Stock bleach was 10-15% calculation assumed middle concentration valid. Stock was 5 days old.</td>
+<td style="text-align: left;">23_09_25_3_3</td>
+<td style="text-align: left;">asg_male_2d</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">24/09/2025</td>
+<td style="text-align: left;">Tiny one colony growth</td>
+<td style="text-align: left;">&lt; 1</td>
+<td style="text-align: left;">Small and circular</td>
+<td style="text-align: left;">IMG_5736.png</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">23_09_2025_SS_labnnotes</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">23/09/2025</td>
+<td style="text-align: left;">Washed fly submerged in PBS for 1 minute, PBS wash plated.</td>
+<td style="text-align: left;">Tests if bleach kills bacteria on the surface of the fly.</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">PBS wash</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">0.8</td>
+<td style="text-align: left;">Stock bleach was 10-15% calculation assumed middle concentration valid. Stock was 5 days old.</td>
+<td style="text-align: left;">18_09_25_3_4</td>
+<td style="text-align: left;">asg_male_2d</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">24/09/2025</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">23_09_2025_SS_labnnotes</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">23/09/2025</td>
+<td style="text-align: left;">Bleach fly spread directly onto plate.</td>
+<td style="text-align: left;">Tests if LB plate specifically picks up bacteria</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">Direct fly contact</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">23_09_25_3_3</td>
+<td style="text-align: left;">asg_male_2d</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">24/09/2025</td>
+<td style="text-align: left;">Many splodges of growth with coloies combined together.</td>
+<td style="text-align: left;">30</td>
+<td style="text-align: left;">Thick rhizoid shapes.</td>
+<td style="text-align: left;">IMG_5737.png</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">23_09_2025_SS_labnnotes</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">23/09/2025</td>
+<td style="text-align: left;">Bleach fly spread directly onto plate.</td>
+<td style="text-align: left;">Tests if LB plate specifically picks up bacteria</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">Direct fly contact</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">23_09_25_3_4</td>
+<td style="text-align: left;">asg_female_2d</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">24/09/2025</td>
+<td style="text-align: left;">Many splodges of growth with coloies combined together.</td>
+<td style="text-align: left;">35</td>
+<td style="text-align: left;">Thick rhizoid shapes.</td>
+<td style="text-align: left;">IMG_5738.png</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">23_09_2025_SS_labnnotes</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">23/09/2025</td>
+<td style="text-align: left;">Dirty fly spread directly onto plate.</td>
+<td style="text-align: left;">Tests if LB plate specifically picks up bacteria</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">Direct fly contact</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">No.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">23_09_25_4_1</td>
+<td style="text-align: left;">asg_male_2d</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">24/09/2025</td>
+<td style="text-align: left;">Large colonies together, splodged.</td>
+<td style="text-align: left;">25</td>
+<td style="text-align: left;">Large circles.</td>
+<td style="text-align: left;">IMG_5739.png</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">23_09_2025_SS_labnnotes</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">23/09/2025</td>
+<td style="text-align: left;">Dirty fly spread directly onto plate.</td>
+<td style="text-align: left;">Tests if LB plate specifically picks up bacteria</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">Direct fly contact</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">No.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">23_09_25_4_2</td>
+<td style="text-align: left;">asg_female_2d</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">24/09/2025</td>
+<td style="text-align: left;">Large colonies together, splodged.</td>
+<td style="text-align: left;">25</td>
+<td style="text-align: left;">Large circles.</td>
+<td style="text-align: left;">IMG_5740.png</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">23_09_2025_SS_labnnotes</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">26/09/2025</td>
+<td style="text-align: left;">Unwashed fly submerged in PBS for 30 seconds, PBS wash plated.</td>
+<td style="text-align: left;">Tests if LB plate specifically picks up bacteria from PBS.</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">PBS wash</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Yes</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">No.</td>
+<td style="text-align: left;">0.8</td>
+<td style="text-align: left;">Stock bleach was 10-15% calculation assumed middle concentration valid. Stock was 5 days old.</td>
+<td style="text-align: left;">26_09_25_1_2</td>
+<td style="text-align: left;">asg_female_</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: left;">27/09/2025</td>
+<td style="text-align: left;">Lots ad lots of tiny colonies</td>
+<td style="text-align: left;">50</td>
+<td style="text-align: left;">Tiny colonies</td>
+<td style="text-align: left;">IMG_5764.png</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">26/09/2025</td>
+<td style="text-align: left;">Unwashed fly submerged in PBS for 30 seconds, PBS wash plated.</td>
+<td style="text-align: left;">Tests if LB plate specifically picks up bacteria from PBS.</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">PBS wash</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Yes</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">No.</td>
+<td style="text-align: left;">0.8</td>
+<td style="text-align: left;">Stock bleach was 10-15% calculation assumed middle concentration valid. Stock was 5 days old.</td>
+<td style="text-align: left;">26_09_25_1_2</td>
+<td style="text-align: left;">asg_female_</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: left;">27/09/2025</td>
+<td style="text-align: left;">Large splodges of growth, colonies joined together. Some small colonies.</td>
+<td style="text-align: left;">25</td>
+<td style="text-align: left;">Large splodges of joined together colonies.</td>
+<td style="text-align: left;">IMG_5765.png</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">26/09/2025</td>
+<td style="text-align: left;">Fly washed in bleach for 1 minute then PBS for 30s. PBS wash plated out</td>
+<td style="text-align: left;">Tests bacterial growth from one bleach, and one PBS rinse.</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">PBS wash</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">0.8</td>
+<td style="text-align: left;">Stock bleach was 10-15% calculation assumed middle concentration valid. Stock was 5 days old.</td>
+<td style="text-align: left;">26_09_25_2_1</td>
+<td style="text-align: left;">asg_female_</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: left;">27/09/2025</td>
+<td style="text-align: left;">One large splodge of joined together colonies, some lighter shadow joined together colonies.</td>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">Large splodges of joined together colonies.</td>
+<td style="text-align: left;">IMG_5768.png</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">26/09/2025</td>
+<td style="text-align: left;">Fly washed in bleach for 1 minute then PBS for 30s. PBS wash plated out</td>
+<td style="text-align: left;">Tests bacterial growth from one bleach, and one PBS rinse.</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">PBS wash</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Lab bench next to bunsen</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">0.8</td>
+<td style="text-align: left;">Stock bleach was 10-15% calculation assumed middle concentration valid. Stock was 5 days old.</td>
+<td style="text-align: left;">26_09_25_2_1</td>
+<td style="text-align: left;">asg_female_</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: left;">27/09/2025</td>
+<td style="text-align: left;">One small colony</td>
+<td style="text-align: left;">&lt; 1</td>
+<td style="text-align: left;">Small colony</td>
+<td style="text-align: left;">IMG_5769.png</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">26/09/2025</td>
+<td style="text-align: left;">Just sterile PBS on a plate. No flies.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">PBS wash</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: left;">27/09/2025</td>
+<td style="text-align: left;">One small colony</td>
+<td style="text-align: left;">&lt; 1</td>
+<td style="text-align: left;">Small colony</td>
+<td style="text-align: left;">IMG_5771.png</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">26/09/2025</td>
+<td style="text-align: left;">Just sterile PBS on a plate. No flies.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">PBS wash</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: left;">27/09/2025</td>
+<td style="text-align: left;">Large splodges of growth, colonies joined together. Some small colonies.</td>
+<td style="text-align: left;">8</td>
+<td style="text-align: left;">Large splodgs of joined together colonies.</td>
+<td style="text-align: left;">IMG_5770.png</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">26/09/2025</td>
+<td style="text-align: left;">A plain LB plate with nothing on</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">None.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: left;">27/09/2025</td>
+<td style="text-align: left;">A few small colonies</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Small colony</td>
+<td style="text-align: left;">IMG_5772.png</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">26/09/2025</td>
+<td style="text-align: left;">A plain LB plate with nothing on</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">None.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: left;">27/09/2025</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">IMG_5773.png</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">16/10/2025</td>
+<td style="text-align: left;">An LB plate, with nothing added.</td>
+<td style="text-align: left;">To test if the LB plates used for the sterility tests are sterile.</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">None.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">Yes</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Lab bench next to bunsen.</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">Stock bleach was 10-15% calculation assumed middle concentration. Stock was 1 day old, solution made on the day.</td>
+<td style="text-align: left;">16_10_2025_1_1</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">17/10/2025</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">IMG_5741.png</td>
+<td style="text-align: left;">Katie Millar, Emily Fowler</td>
+<td style="text-align: left;">|NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">16/10/2025</td>
+<td style="text-align: left;">An LB plate, with nothing added.</td>
+<td style="text-align: left;">To test if the LB plates used for the sterility tests are sterile.</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">None.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">Yes</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Lab bench next to bunsen.</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">Stock bleach was 10-15% calculation assumed middle concentration. Stock was 1 day old, solution made on the day.</td>
+<td style="text-align: left;">16_10_2025_1_2</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">17/10/2025</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">IMG_5742.png</td>
+<td style="text-align: left;">Katie Millar, Emily Fowler</td>
+<td style="text-align: left;">|NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">16/10/2025</td>
+<td style="text-align: left;">An LB plate, with nothing added.</td>
+<td style="text-align: left;">To test if the LB plates used for the sterility tests are sterile.</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">None.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">Yes</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Lab bench next to bunsen.</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">Stock bleach was 10-15% calculation assumed middle concentration. Stock was 1 day old, solution made on the day.</td>
+<td style="text-align: left;">16_10_2025_1_3</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">17/10/2025</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">IMG_5743.png</td>
+<td style="text-align: left;">Katie Millar, Emily Fowler</td>
+<td style="text-align: left;">|NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">16/10/2025</td>
+<td style="text-align: left;">Bleach solution (no flies added) plated on an LB plate.</td>
+<td style="text-align: left;">To test the bleach is sterile, as the solution is made.</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">Bleach</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">Yes</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Lab bench next to bunsen.</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">0.8</td>
+<td style="text-align: left;">Stock bleach was 10-15% calculation assumed middle concentration. Stock was 1 day old, solution made on the day.</td>
+<td style="text-align: left;">16_10_2025_2_1</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">17/10/2025</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">IMG_5744.png</td>
+<td style="text-align: left;">Katie Millar, Emily Fowler</td>
+<td style="text-align: left;">|NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">16/10/2025</td>
+<td style="text-align: left;">Bleach solution (no flies added) plated on an LB plate.</td>
+<td style="text-align: left;">To test the bleach is sterile, as the solution is made.</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">Bleach</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">Yes</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Lab bench next to bunsen.</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">0.8</td>
+<td style="text-align: left;">Stock bleach was 10-15% calculation assumed middle concentration. Stock was 1 day old, solution made on the day.</td>
+<td style="text-align: left;">16_10_2025_2_2</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">17/10/2025</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">IMG_5745.png</td>
+<td style="text-align: left;">Katie Millar, Emily Fowler</td>
+<td style="text-align: left;">|NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">16/10/2025</td>
+<td style="text-align: left;">Bleach solution (no flies added) plated on an LB plate.</td>
+<td style="text-align: left;">To test the bleach is sterile, as the solution is made.</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">Bleach</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">Yes</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Lab bench next to bunsen.</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">0.8</td>
+<td style="text-align: left;">Stock bleach was 10-15% calculation assumed middle concentration. Stock was 1 day old, solution made on the day.</td>
+<td style="text-align: left;">16_10_2025_2_3</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">17/10/2025</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">IMG_5746.png</td>
+<td style="text-align: left;">Katie Millar, Emily Fowler</td>
+<td style="text-align: left;">|NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">16/10/2025</td>
+<td style="text-align: left;">Filter paper is folded and placed on an LB plate.</td>
+<td style="text-align: left;">To test if the filter paper used for the sterile washes is sterile</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">Filter paper</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">Yes</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Lab bench next to bunsen.</td>
+<td style="text-align: left;">No.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">Stock bleach was 10-15% calculation assumed middle concentration. Stock was 1 day old, solution made on the day.</td>
+<td style="text-align: left;">16_10_2025_3_1</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">17/10/2025</td>
+<td style="text-align: left;">Large lamoung if growth surrounding and on filter paper.</td>
+<td style="text-align: left;">30</td>
+<td style="text-align: left;">Lawn colonies.</td>
+<td style="text-align: left;">IMG_5747.png</td>
+<td style="text-align: left;">Katie Millar, Emily Fowler</td>
+<td style="text-align: left;">|NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">16/10/2025</td>
+<td style="text-align: left;">Filter paper is folded and placed on an LB plate.</td>
+<td style="text-align: left;">To test if the filter paper used for the sterile washes is sterile</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">Filter paper</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">Yes</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Lab bench next to bunsen.</td>
+<td style="text-align: left;">No.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">Stock bleach was 10-15% calculation assumed middle concentration. Stock was 1 day old, solution made on the day.</td>
+<td style="text-align: left;">16_10_2025_3_2</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">17/10/2025</td>
+<td style="text-align: left;">Large lamoung if growth surrounding and on filter paper.</td>
+<td style="text-align: left;">30</td>
+<td style="text-align: left;">Lawn colonies.</td>
+<td style="text-align: left;">IMG_5748.png</td>
+<td style="text-align: left;">Katie Millar, Emily Fowler</td>
+<td style="text-align: left;">|NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">16/10/2025</td>
+<td style="text-align: left;">Filter paper is folded and placed on an LB plate.</td>
+<td style="text-align: left;">To test if the filter paper used for the sterile washes is sterile</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">Filter paper</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">Yes</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Lab bench next to bunsen.</td>
+<td style="text-align: left;">No.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">Stock bleach was 10-15% calculation assumed middle concentration. Stock was 1 day old, solution made on the day.</td>
+<td style="text-align: left;">16_10_2025_3_3</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">17/10/2025</td>
+<td style="text-align: left;">Large lamoung if growth surrounding and on filter paper.</td>
+<td style="text-align: left;">30</td>
+<td style="text-align: left;">Lawn colonies.</td>
+<td style="text-align: left;">IMG_5749.png</td>
+<td style="text-align: left;">Katie Millar, Emily Fowler</td>
+<td style="text-align: left;">|NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">16/10/2025</td>
+<td style="text-align: left;">Sterile PBS only plated, no flies introduced at any time.</td>
+<td style="text-align: left;">To test if the PBS solution used for rinsing is sterile.</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">PBS</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Yes</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Lab bench next to bunsen.</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">Stock bleach was 10-15% calculation assumed middle concentration. Stock was 1 day old, solution made on the day.</td>
+<td style="text-align: left;">16_10_2025_4_1</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">17/10/2025</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">IMG_5756.png</td>
+<td style="text-align: left;">Katie Millar, Emily Fowler</td>
+<td style="text-align: left;">|NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">16/10/2025</td>
+<td style="text-align: left;">Sterile PBS only plated, no flies introduced at any time.</td>
+<td style="text-align: left;">To test if the PBS solution used for rinsing is sterile.</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">PBS</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Yes</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Lab bench next to bunsen.</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">Stock bleach was 10-15% calculation assumed middle concentration. Stock was 1 day old, solution made on the day.</td>
+<td style="text-align: left;">16_10_2025_4_2</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">17/10/2025</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">IMG_5757.png</td>
+<td style="text-align: left;">Katie Millar, Emily Fowler</td>
+<td style="text-align: left;">|NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">16/10/2025</td>
+<td style="text-align: left;">Sterile PBS only plated, no flies introduced at any time.</td>
+<td style="text-align: left;">To test if the PBS solution used for rinsing is sterile.</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">PBS</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Yes</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Lab bench next to bunsen.</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">Stock bleach was 10-15% calculation assumed middle concentration. Stock was 1 day old, solution made on the day.</td>
+<td style="text-align: left;">16_10_2025_4_3</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">17/10/2025</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">IMG_5758.png</td>
+<td style="text-align: left;">Katie Millar, Emily Fowler</td>
+<td style="text-align: left;">|NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">16/10/2025</td>
+<td style="text-align: left;">A dirty, unsterlised fly is wiped on a plate.</td>
+<td style="text-align: left;">To test if rubbing a dirty fly on an LB plate will pick up bacteria.</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">Dirty fly.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">Yes</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Lab bench next to bunsen.</td>
+<td style="text-align: left;">No.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">Stock bleach was 10-15% calculation assumed middle concentration. Stock was 1 day old, solution made on the day.</td>
+<td style="text-align: left;">16_10_2025_5_1</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">17/10/2025</td>
+<td style="text-align: left;">Big stripes of bacteria</td>
+<td style="text-align: left;">40</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">IMG_5752.png</td>
+<td style="text-align: left;">Katie Millar, Emily Fowler</td>
+<td style="text-align: left;">|NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">16/10/2025</td>
+<td style="text-align: left;">A dirty, unsterlised fly is wiped on a plate.</td>
+<td style="text-align: left;">To test if rubbing a dirty fly on an LB plate will pick up bacteria.</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">Dirty fly.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">Yes</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Lab bench next to bunsen.</td>
+<td style="text-align: left;">No.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">Stock bleach was 10-15% calculation assumed middle concentration. Stock was 1 day old, solution made on the day.</td>
+<td style="text-align: left;">16_10_2025_5_2</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">17/10/2025</td>
+<td style="text-align: left;">Large colonies together, splodged.</td>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">IMG_5750.png</td>
+<td style="text-align: left;">Katie Millar, Emily Fowler</td>
+<td style="text-align: left;">|NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">16/10/2025</td>
+<td style="text-align: left;">A dirty, unsterlised fly is wiped on a plate.</td>
+<td style="text-align: left;">To test if rubbing a dirty fly on an LB plate will pick up bacteria.</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">Dirty fly.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">Yes</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Lab bench next to bunsen.</td>
+<td style="text-align: left;">No.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">Stock bleach was 10-15% calculation assumed middle concentration. Stock was 1 day old, solution made on the day.</td>
+<td style="text-align: left;">16_10_2025_5_3</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">17/10/2025</td>
+<td style="text-align: left;">Large colonies together, splodged.</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">IMG_5751.png</td>
+<td style="text-align: left;">Katie Millar, Emily Fowler</td>
+<td style="text-align: left;">|NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">16/10/2025</td>
+<td style="text-align: left;">A clean, surface sterilised fly is wiped on a plate.</td>
+<td style="text-align: left;">To test if the surface sterilisation process successfully cleaned the fly.</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">Surface sterilised fly.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Lab bench next to bunsen.</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">0.8</td>
+<td style="text-align: left;">Stock bleach was 10-15% calculation assumed middle concentration. Stock was 1 day old, solution made on the day.</td>
+<td style="text-align: left;">16_10_2025_6_1</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">17/10/2025</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">IMG_5753.png</td>
+<td style="text-align: left;">Katie Millar, Emily Fowler</td>
+<td style="text-align: left;">|NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">16/10/2025</td>
+<td style="text-align: left;">A clean, surface sterilised fly is wiped on a plate.</td>
+<td style="text-align: left;">To test if the surface sterilisation process successfully cleaned the fly.</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">Surface sterilised fly.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Lab bench next to bunsen.</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">0.8</td>
+<td style="text-align: left;">Stock bleach was 10-15% calculation assumed middle concentration. Stock was 1 day old, solution made on the day.</td>
+<td style="text-align: left;">16_10_2025_6_2</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">17/10/2025</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">IMG_5754.png</td>
+<td style="text-align: left;">Katie Millar, Emily Fowler</td>
+<td style="text-align: left;">|NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">16/10/2025</td>
+<td style="text-align: left;">A clean, surface sterilised fly is wiped on a plate.</td>
+<td style="text-align: left;">To test if the surface sterilisation process successfully cleaned the fly.</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">Surface sterilised fly.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Lab bench next to bunsen.</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">0.8</td>
+<td style="text-align: left;">Stock bleach was 10-15% calculation assumed middle concentration. Stock was 1 day old, solution made on the day.</td>
+<td style="text-align: left;">16_10_2025_6_3</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">17/10/2025</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">IMG_5755.png</td>
+<td style="text-align: left;">Katie Millar, Emily Fowler</td>
+<td style="text-align: left;">|NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">22/10/2025</td>
+<td style="text-align: left;">Filter paper is folded and placed on an LB plate.</td>
+<td style="text-align: left;">Previous work showed that new filter paper is not sterile, so using this as a control against autoclaved filter paper.</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">Filter paper</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">Yes</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">No.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">22_10_2025_1_1</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Big growth of bacteria</td>
+<td style="text-align: left;">25</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">IMG_5779.png</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">22/10/2025</td>
+<td style="text-align: left;">Filter paper is folded and placed on an LB plate.</td>
+<td style="text-align: left;">Previous work showed that new filter paper is not sterile, so using this as a control against autoclaved filter paper.</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">Filter paper</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">Yes</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">No.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">22_10_2025_1_2</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Big growth of bacteria</td>
+<td style="text-align: left;">20</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">IMG_5778.png</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">22/10/2025</td>
+<td style="text-align: left;">Autoclaved filter paper is folded and placed on an LB plate.</td>
+<td style="text-align: left;">Testing if autoclaving filter paper successfully makes the filter paper sterile.</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">Autoclaved filter paper</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">Yes</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">22_10_2025_2_1</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Little growth around</td>
+<td style="text-align: left;">25</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">IMG_5777.png</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">22/10/2025</td>
+<td style="text-align: left;">Autoclaved filter paper is folded and placed on an LB plate.</td>
+<td style="text-align: left;">Testing if autoclaving filter paper successfully makes the filter paper sterile.</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">Autoclaved filter paper</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">Yes</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">22_10_2025_2_2</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Little growth around</td>
+<td style="text-align: left;">20</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">22/10/2025</td>
+<td style="text-align: left;">A surface sterilised fly is rubbed on a plate.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">A surface sterilised fly.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">0.8</td>
+<td style="text-align: left;">Stock bleach was 10-15% calculation assumed middle concentration. Stock was 7 days old, solution made on the day.</td>
+<td style="text-align: left;">22_10_2025_3_1</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Big stripes of bacteria</td>
+<td style="text-align: left;">25</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">IMG_5775.png</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">22/10/2025</td>
+<td style="text-align: left;">A surface sterilised fly is rubbed on a plate.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">A surface sterilised fly.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">0.8</td>
+<td style="text-align: left;">Stock bleach was 10-15% calculation assumed middle concentration. Stock was 7 days old, solution made on the day.</td>
+<td style="text-align: left;">22_10_2025_3_2</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Big stripes of bacteria</td>
+<td style="text-align: left;">25</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">22/10/2025</td>
+<td style="text-align: left;">A dirty, unsterlised fly is wiped on a plate.</td>
+<td style="text-align: left;">To test if rubbing a dirty fly on an LB plate will pick up bacteria.</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">A dirty fly.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">Yes</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">No.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">22_10_2025_4_1</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Stripes everywhere</td>
+<td style="text-align: left;">50</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">IMG_5780.png</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">22/10/2025</td>
+<td style="text-align: left;">A dirty, unsterlised fly is wiped on a plate.</td>
+<td style="text-align: left;">To test if rubbing a dirty fly on an LB plate will pick up bacteria.</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">A dirty fly.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">Yes</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">No.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">22_10_2025_4_2</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Stripes everywhere</td>
+<td style="text-align: left;">25</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">IMG_5781.png</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">27/10/2025</td>
+<td style="text-align: left;">A control LB plate.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">Plain LB plate.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">Yes</td>
+<td style="text-align: left;">Under flow hood, dried under UV light.</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">27_10_2025_1_1</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">IMG_5817.heic</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">27/10/2025</td>
+<td style="text-align: left;">A control LB plate.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">Plain LB plate.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">Yes</td>
+<td style="text-align: left;">Under flow hood, dried under UV light.</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">27_10_2025_1_2</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">IMG_5818.heic</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">27/10/2025</td>
+<td style="text-align: left;">A control LB plate.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">Plain LB plate.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">Yes</td>
+<td style="text-align: left;">Under flow hood, dried under UV light.</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">27_10_2025_1_3</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">IMG_5819.heic</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">27/10/2025</td>
+<td style="text-align: left;">Autoclaved filterpaper, followed by touching. Just loose sheets autoclaved.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">Filter paper autoclaved loose in a pipette box, handled with ethanoled gloves after.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Under flow hood, dried under UV light.</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">27_10_2025_2_1</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">27/10/2025</td>
+<td style="text-align: left;">Autoclaved filterpaper, followed by touching. Just loose sheets autoclaved.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">Filter paper autoclaved loose in a pipette box, handled with ethanoled gloves after.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Under flow hood, dried under UV light.</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">27_10_2025_2_2</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">27/10/2025</td>
+<td style="text-align: left;">Autoclaved filterpaper, followed by touching. Just loose sheets autoclaved.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">Filter paper autoclaved loose in a pipette box, handled with ethanoled gloves after.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Under flow hood, dried under UV light.</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">27_10_2025_2_3</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">27/10/2025</td>
+<td style="text-align: left;">Autoclaved filter paper, not followed by touching.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">Autoclaved folded filter paper, handled with forceps after.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Under flow hood, dried under UV light.</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">27_10_2025_3_1</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">IMG_5822.heic</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">27/10/2025</td>
+<td style="text-align: left;">Autoclaved filter paper, not followed by touching.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">Autoclaved folded filter paper, handled with forceps after.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Under flow hood, dried under UV light.</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">27_10_2025_3_2</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">IMG_5823.heic</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">27/10/2025</td>
+<td style="text-align: left;">Autoclaved filter paper, not followed by touching.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">Autoclaved folded filter paper, handled with forceps after.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Under flow hood, dried under UV light.</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">27_10_2025_3_3</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">IMG_5824.heic</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">27/10/2025</td>
+<td style="text-align: left;">Gloves touching plate.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">A plate touched with gloved and ehtanoled hands.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Under flow hood, dried under UV light.</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">27_10_2025_4_1</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">IMG_5826.heic</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">27/10/2025</td>
+<td style="text-align: left;">Gloves touching plate.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">A plate touched with gloved and ehtanoled hands.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Under flow hood, dried under UV light.</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">27_10_2025_4_2</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">IMG_5827.heic</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">27/10/2025</td>
+<td style="text-align: left;">Gloves touching plate.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">A plate touched with gloved and ehtanoled hands.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Under flow hood, dried under UV light.</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">27_10_2025_4_3</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">IMG_5828.heic</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">27/10/2025</td>
+<td style="text-align: left;">Autoclaved filterpaper, followed by touching. Box of filter paper autoclaved.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">Filter paper autoclaved in its own box, in a pipette box, handled with ethanoled gloves after.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Under flow hood, dried under UV light.</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">27_10_2025_5_1</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">IMG_5831.heic</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">27/10/2025</td>
+<td style="text-align: left;">Autoclaved filterpaper, followed by touching. Box of filter paper autoclaved.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">Filter paper autoclaved in its own box, in a pipette box, handled with ethanoled gloves after.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Under flow hood, dried under UV light.</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">27_10_2025_5_2</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">IMG_5832.heic</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">27/10/2025</td>
+<td style="text-align: left;">Autoclaved filterpaper, followed by touching. Box of filter paper autoclaved.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">Filter paper autoclaved in its own box, in a pipette box, handled with ethanoled gloves after.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Under flow hood, dried under UV light.</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">27_10_2025_5_3</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">IMG_5833.heic</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">28/10/2025</td>
+<td style="text-align: left;">A control LB plate.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">Plain LB plate.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">Yes</td>
+<td style="text-align: left;">Under flow hood, dried under UV light.</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">28_10_2025_1_1</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">IMG_5857.heic</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">28/10/2025</td>
+<td style="text-align: left;">A control LB plate.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">Plain LB plate.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">Yes</td>
+<td style="text-align: left;">Under flow hood, dried under UV light.</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">28_10_2025_1_2</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">IMG_5858.heic</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">28/10/2025</td>
+<td style="text-align: left;">A control LB plate.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">Plain LB plate.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">Yes</td>
+<td style="text-align: left;">Under flow hood, dried under UV light.</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">28_10_2025_1_3</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">IMG_5859.heic</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">28/10/2025</td>
+<td style="text-align: left;">Autoclaved filterpaper, followed by touching. Just loose sheets autoclaved.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">Filter paper autoclaved loose in a pipette box, handled with ethanoled gloves after.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Under flow hood, dried under UV light.</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">28_10_2025_2_1</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">IMG_5866.heic</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">28/10/2025</td>
+<td style="text-align: left;">Autoclaved filterpaper, followed by touching. Just loose sheets autoclaved.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">Filter paper autoclaved loose in a pipette box, handled with ethanoled gloves after.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Under flow hood, dried under UV light.</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">28_10_2025_2_2</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">IMG_5867.heic</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">28/10/2025</td>
+<td style="text-align: left;">Autoclaved filterpaper, followed by touching. Just loose sheets autoclaved.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">Filter paper autoclaved loose in a pipette box, handled with ethanoled gloves after.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Under flow hood, dried under UV light.</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">28_10_2025_2_3</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">IMG_5868.heic</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">28/10/2025</td>
+<td style="text-align: left;">Autoclaved filter paper, not followed by touching.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">Autoclaved folded filter paper, handled with forceps after.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Under flow hood, dried under UV light.</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">28_10_2025_3_1</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">IMG_5863.heic</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">28/10/2025</td>
+<td style="text-align: left;">Autoclaved filter paper, not followed by touching.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">Autoclaved folded filter paper, handled with forceps after.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Under flow hood, dried under UV light.</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">28_10_2025_3_2</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">IMG_5864.heic</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">28/10/2025</td>
+<td style="text-align: left;">Autoclaved filter paper, not followed by touching.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">Autoclaved folded filter paper, handled with forceps after.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Under flow hood, dried under UV light.</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">28_10_2025_3_3</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">IMG_5865.heic</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">28/10/2025</td>
+<td style="text-align: left;">Gloves touching plate.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">A plate touched with gloved and ehtanoled hands.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Under flow hood, dried under UV light.</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">28_10_2025_4_1</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">IMG_5854.heic</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">28/10/2025</td>
+<td style="text-align: left;">Gloves touching plate.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">A plate touched with gloved and ehtanoled hands.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Under flow hood, dried under UV light.</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">28_10_2025_4_2</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">IMG_5855.heic</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">28/10/2025</td>
+<td style="text-align: left;">Gloves touching plate.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">A plate touched with gloved and ehtanoled hands.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Under flow hood, dried under UV light.</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">28_10_2025_4_3</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">IMG_5856.heic</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">28/10/2025</td>
+<td style="text-align: left;">Autoclaved filterpaper, followed by touching. Box of filter paper autoclaved.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">Filter paper autoclaved in its own box, in a pipette box, handled with ethanoled gloves after.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Under flow hood, dried under UV light.</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">28_10_2025_5_1</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">IMG_5860.heic</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">28/10/2025</td>
+<td style="text-align: left;">Autoclaved filterpaper, followed by touching. Box of filter paper autoclaved.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">Filter paper autoclaved in its own box, in a pipette box, handled with ethanoled gloves after.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Under flow hood, dried under UV light.</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">28_10_2025_5_2</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">IMG_5861.heic</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">28/10/2025</td>
+<td style="text-align: left;">Autoclaved filterpaper, followed by touching. Box of filter paper autoclaved.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">Filter paper autoclaved in its own box, in a pipette box, handled with ethanoled gloves after.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Under flow hood, dried under UV light.</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">28_10_2025_5_3</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">No growth.</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">IMG_5862.heic</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">28/10/2025</td>
+<td style="text-align: left;">Non-autoclaved filter paper, folded with gloved and ethanoled hands.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">Fresh filter paper from the bought autoclave box. Not autoclaved.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Yes</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">Yes.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">28_10_2025_6_1</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Large lamoung if growth surrounding and on filter paper.</td>
+<td style="text-align: left;">30</td>
+<td style="text-align: left;">Lawn colonies.</td>
+<td style="text-align: left;">IMG_5869.heic</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">28/10/2025</td>
+<td style="text-align: left;">Non-autoclaved filter paper, folded with gloved and ethanoled hands.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">Fresh filter paper from the bought autoclave box. Not autoclaved.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Yes</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">No.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">28_10_2025_6_2</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Large lamoung if growth surrounding and on filter paper.</td>
+<td style="text-align: left;">30</td>
+<td style="text-align: left;">Lawn colonies.</td>
+<td style="text-align: left;">IMG_5870.heic</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">28/10/2025</td>
+<td style="text-align: left;">Non-autoclaved filter paper, folded with gloved and ethanoled hands.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">LB</td>
+<td style="text-align: left;">Fresh filter paper from the bought autoclave box. Not autoclaved.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Yes</td>
+<td style="text-align: left;">Under flow hood.</td>
+<td style="text-align: left;">No.</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">28_10_2025_6_3</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Large lamoung if growth surrounding and on filter paper.</td>
+<td style="text-align: left;">30</td>
+<td style="text-align: left;">Lawn colonies.</td>
+<td style="text-align: left;">IMG_5871.heic</td>
+<td style="text-align: left;">Katie Millar</td>
+<td style="text-align: left;">NA</td>
+</tr>
+</tbody>
+</table>
 
-<img data-src="images/medfly_1.jpg" style="width:70.0%" class="r-stretch"><div class="fragment">
-<pre><code>-   They are actually sometimes called peacock flies, because they are colourful xD</code></pre>
+
+</div>
 </div>
 <div class="fragment">
 <ul>
-<li>Tephritidae contain most of the flies that cause economic damage to crops because some feed on <strong>living tissue</strong>, they go after fresh fruits, plants, etc.</li>
-</ul>
-</div>
-<div class="fragment">
-<ul>
-<li>They do this through their ovipositor. Its larvae feed and develop on many deciduous, subtropical, and tropical fruits and some vegetables.</li>
-</ul>
-</div>
-</section>
-<section id="tephritids-1" class="slide level2">
-<h2>Tephritids</h2>
-<h3 id="the-medfly.">The Medfly.</h3>
-<div class="fragment">
-<ul>
-<li>A common Tephritid, is the Mediterranean Fruit Fly (Medfly), ranked first among economically important fruit fly species.</li>
-</ul>
-</div>
-<div class="fragment">
-<ul>
-<li>Originated in sub-Suharan Africa, it can tolerate cooler climates better than most other tropical fruit flies.</li>
-</ul>
-</div>
-<div class="fragment">
-<ul>
-<li>Eradication efforts may be extremely expensive.</li>
+<li>We eventually found that using filter paper to on top of the bijou tube, allowing the solution to drain through so the flies could be more easily picked up, actually resulted in having sterile flies, and clean plates.</li>
 </ul>
 </div>
 </section>
 <section id="quiz-question-time" class="slide level2">
 <h2>Quiz question time!</h2>
-<ul>
-<li><p>Please follow the first task, answer the questions don’t say your total at the end.</p>
-<ul>
-<li>Navigation tips:</li>
-</ul></li>
-<li><p>Don’t refresh the page, you will lose your score.</p></li>
-</ul>
-</section>
-<section id="how-we-are-looking-at-host-microbe-symbioses-in-tephritid-pest-insects" class="slide level2">
-<h2>How we are looking at “Host-microbe symbioses in Tephritid pest insects”</h2>
-<div class="fragment">
-<ul>
-<li><ol type="1">
-<li>Surface sterilisation of Medflies.</li>
-</ol></li>
-</ul>
-</div>
-<div class="fragment">
-<ul>
-<li><ol start="2" type="1">
-<li>Gut dissection of Medflies.</li>
-</ol></li>
-</ul>
-</div>
-<div class="fragment">
-<ul>
-<li><ol start="3" type="1">
-<li>Can we do shotgun metagenomics in Medflies?</li>
-</ol></li>
-</ul>
-</div>
-</section>
-<section id="surface-sterilisation-of-medflies." class="slide level2">
-<h2>1. Surface sterilisation of Medflies.</h2>
-<h3 id="why-do-we-surface-sterilise">Why do we surface sterilise?</h3>
-<div class="fragment">
-<ul>
-<li>Surface sterilisation is the process of washing the surface of the Medfly, dunking them.</li>
-</ul>
-</div>
-<div class="fragment">
-<ul>
-<li>We want to know about the microbiota of the Medfly, but if we analyse the microbiota without washing it, we might be getting it’s environment.</li>
-</ul>
-</div>
-</section>
-<section id="step-1---surface-sterilisations" class="slide level2">
-<h2>Step 1 - Surface sterilisations</h2>
-<h3 id="how-should-we-surface-sterilise">How should we surface sterilise?</h3>
-<div class="fragment">
-<ul>
-<li>Ethanol ? <img data-src="images/washfly.png" style="width:20.0%"></li>
-</ul>
-</div>
-<div class="fragment">
-<ul>
-<li>Bleach ? <img data-src="images/bleachfly.png" style="width:20.0%"></li>
-</ul>
-</div>
-<div class="fragment">
-<ul>
-<li>Ethanol and bleach are both effective at killing microbes, but <strong>bleach</strong> can actually denature DNA.</li>
-</ul>
-</div>
-<div class="fragment">
-<ul>
-<li>So if ethanol allows DNA to remain, the DNA of the microbes could still be present. You blend this all up, there might still be external surface microbes.</li>
-</ul>
-<p><img data-src="images/blender.png" style="width:20.0%"></p>
-</div>
-</section>
-<section id="step-1---surface-sterilisations-1" class="slide level2">
-<h2>Step 1 - Surface sterilisations</h2>
-<h3 id="how-should-we-surface-sterilise-1">How should we surface sterilise?</h3>
-<div class="fragment">
-<p><img data-src="images/surface.png" style="width:50.0%"></p>
-</div>
-<div class="fragment">
-<p><small> Binetruy et al.&nbsp;(2019) looked into methods of surface sterilisation in ticks. When testing bleach and ethanol, showed that when looking at external microbiome, revealed that ethanol-based surface sterilisation method is inefficient to eliminate the DNA of external bacteria. </small></p>
-</div>
-</section>
-<section id="quiz-question-time-1" class="slide level2">
-<h2>Quiz question time!</h2>
 <p>Please do this.</p>
 </section>
-<section id="step-2---gut-dissections." class="slide level2">
-<h2>Step 2 - Gut Dissections.</h2>
-<h3 id="guts-vs.-whole-flies">Guts vs.&nbsp;Whole flies</h3>
+<section id="guts-vs.-whole-flies" class="slide level2">
+<h2>Guts vs.&nbsp;Whole flies</h2>
 <div class="fragment">
 <ul>
 <li>In insect microbiota studies, studies usually vary whether using the whole gut, or the whole fly to analyse the microbiota.</li>
@@ -583,28 +3353,36 @@ Katie Millar
 </div>
 <div class="fragment">
 <ul>
-<li>While some studies have shown that there is no difference between using the whole gut or the whole fly,</li>
+<li>Some studies have shown that there is no difference between using the whole gut or the whole fly, but there is still argument that you’re missing a lot with getting whole fly bacteria, rather than just gut bacteria.</li>
 </ul>
 </div>
 <div class="fragment">
 <ul>
-<li>Had to know how to properly do these.</li>
+<li>Even if flies are surface-sterilised, whole-fly samples may still include microbes from tissues like the reproductive organs, this could dilute the presence of actual gut bacteria. Some studies have even shown that in Tephritids, there are differences between gut and reproductive organs.</li>
 </ul>
 </div>
 <div class="fragment">
 <ul>
-<li>In sterile conditions.</li>
+<li>We decided to focus on just guts, and not whole flies.</li>
 </ul>
+</div>
+<div class="fragment">
+<p><img data-src="images/dissection.png"></p>
 </div>
 </section>
-<section id="step-2---gut-dissections.-1" class="slide level2">
-<h2>Step 2 - Gut Dissections.</h2>
-<h3 id="understanding-the-tephritid-gut.">Understanding the Tephritid gut.</h3>
-<div class="fragment">
+<section id="gut-dissection" class="slide level2">
+<h2>Gut Dissection</h2>
 <ul>
-<li>In the gut, there is a Medfly gut.</li>
+<li>Foregut</li>
+<li>Midgut</li>
+<li>Hindgut</li>
 </ul>
+<div class="fragment">
+<p><img data-src="images/dissection.png" style="width:40.0%"></p>
 </div>
+</section>
+<section id="understanding-the-medfly-gut." class="slide level2">
+<h2>Understanding the Medfly gut.</h2>
 <div class="fragment">
 <ul>
 <li>It has the foregut, midgut, and hindgut.</li>
@@ -612,31 +3390,76 @@ Katie Millar
 </div>
 <div class="fragment">
 <ul>
-<li>Another reason for reduced microbial niches could be that foregut and hindgut regions are shed during moulting. During metamorphosis, the whole larval gut is substituted by a new adult gut.</li>
+<li>During metamorphosis, the entire larval gut is broken down and replaced with a newly formed adult gut.</li>
+<li>This can influence forms of transmission throughout life stages.</li>
 </ul>
 </div>
 </section>
-<section id="quiz-question-time-2" class="slide level2">
+<section id="understanding-the-medfly-gut.-1" class="slide level2">
+<h2>Understanding the Medfly gut.</h2>
+<div class="fragment">
+<ul>
+<li>It has the foregut, midgut, and hindgut.</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>During metamorphosis, the entire larval gut is broken down and replaced with a newly formed adult gut.</li>
+<li>This can influence forms of transmission throughout life stages.</li>
+</ul>
+</div>
+</section>
+<section id="modes-of-microbial-transmission" class="slide level2">
+<h2>Modes of microbial transmission</h2>
+<div class="fragment">
+<ul>
+<li>There are 3 modes of microbial transmission.</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li><strong>Vertical transmission</strong> – microbes are passed directly from parent to offspring (via the egg surface or reproductive tissues).</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li><strong>Horizontal transmission</strong> – microbes are acquired from other individuals (via mating, shared feeding sites etc).</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li><strong>Environmental transmission</strong> – microbes are acquired from the surrounding environment (host fruit, soil, or artificial diet substrate in the lab).</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>All of these together are referred to as <strong>mixed modes of microbial transmission</strong>.</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>In Medfly, it has been <strong>suggested</strong> that horizontal transmission occurs.</li>
+<li>Larvae have been shown to shed bacteria into the fruit substrate, and other larvae may acquire those microbes from the shared environment (the fruit).</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>However, similar to vertical transmission, this has not been directly proven.</li>
+<li>This could be tested using a high-throughput sequencing approach to identify identical bacterial strains shared between hosts.</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>The current data on transmission in Medfly doesn’t truly show that bacteria between hosts are identical.</li>
+</ul>
+</div>
+</section>
+<section id="quiz-question-time-1" class="slide level2">
 <h2>Quiz question time!</h2>
 <p>Please do this.</p>
 </section>
-<section id="step-3---shotgun-metagenomics." class="slide level2">
-<h2>Step 3 - Shotgun Metagenomics.</h2>
-<h3 id="what-is-shotgun-metagenomics">What is shotgun metagenomics?</h3>
-<div class="fragment">
-<ul>
-<li>In sequencing of the microbiota, the main methods are <strong>amplicon metagenomics</strong> and <strong>shotgun metagenomics</strong>.</li>
-</ul>
-</div>
-<div class="fragment">
-<ul>
-<li>Amplicon metagenomics</li>
-</ul>
-</div>
-</section>
-<section id="step-3---shotgun-metagenomics.-1" class="slide level2">
-<h2>Step 3 - Shotgun Metagenomics.</h2>
-<h3 id="analysis-of-microbiota-data---diversity-metrics">Analysis of microbiota data - Diversity Metrics</h3>
+<section id="diversity-metrics" class="slide level2">
+<h2>Diversity Metrics</h2>
 <div class="fragment">
 <ul>
 <li>In analysis of the microbiota, there are two diversity metrics. These are <strong>Alpha Diversity</strong> and <strong>Beta Diversity</strong>.</li>
@@ -658,12 +3481,13 @@ Katie Millar
 </ul>
 </div>
 </section>
-<section id="step-3---shotgun-metagenomics.-2" class="slide level2">
-<h2>Step 3 - Shotgun Metagenomics.</h2>
-<h3 id="analysis-of-microbiota-data---bray-curtis-disimiliarity">Analysis of microbiota data - Bray Curtis Disimiliarity</h3>
+<section id="diversity-metrics---bray-curtis-disimiliarity" class="slide level2">
+<h2>Diversity Metrics - Bray Curtis Disimiliarity</h2>
 <div class="fragment">
 <ul>
-<li>Bray-Curtis Dissimilarity can be described as a statistic used to quantify the <strong>dissimilarity</strong> in composition of species between <strong>two</strong> different sites. It works by a formula outputting a value between 0 and 1, with 0 meaning the sites are exactly the same, to very similar, and 1 being they are very dissimilar.</li>
+<li><p>Bray-Curtis Dissimilarity can be described as a statistic used to quantify the <strong>dissimilarity</strong> in composition of species between <strong>two</strong> different sites.</p></li>
+<li><p>It works by a formula outputting a value between 0 and 1, with 0 meaning the sites are exactly the same, to very similar, and 1 being they are very dissimilar.</p></li>
+<li><p>It works on species abundance.</p></li>
 </ul>
 </div>
 <div class="fragment">
@@ -681,9 +3505,8 @@ Katie Millar
 </div>
 </div>
 </section>
-<section id="step-3---shotgun-metagenomics.-3" class="slide level2">
-<h2>Step 3 - Shotgun Metagenomics.</h2>
-<h3 id="analysis-of-microbiota-data---bray-curtis-dissimilarity-in-action">Analysis of microbiota data - Bray-Curtis Dissimilarity in action</h3>
+<section id="analysis-of-microbiota-data---bray-curtis-dissimilarity-in-action" class="slide level2">
+<h2>Analysis of microbiota data - Bray-Curtis Dissimilarity in action</h2>
 <div class="fragment">
 <ul>
 <li>Lets go through an example of how <strong>Bray-Curtis Dissimilarity</strong> works, using data from <a href="https://www.microbiologyresearch.org/content/journal/mgen/10.1099/mgen.0.000801#tab2">Darrington et al.&nbsp;(2022)</a>.</li>
@@ -754,9 +3577,8 @@ Katie Millar
 </div>
 </div>
 </section>
-<section id="step-3---shotgun-metagenomics.-4" class="slide level2">
-<h2>Step 3 - Shotgun Metagenomics.</h2>
-<h3 id="analysis-of-microbiota-data-calculating-bray-curtis-dissimilarity">Analysis of microbiota data: Calculating Bray-Curtis Dissimilarity</h3>
+<section id="analysis-of-microbiota-data-calculating-bray-curtis-dissimilarity" class="slide level2">
+<h2>Analysis of microbiota data: Calculating Bray-Curtis Dissimilarity</h2>
 <p>C<sub>ij</sub> = the sum of <strong>lower</strong> counts found at both sites</p>
 <blockquote>
 <p>C<sub>ij</sub> = 0.25 + 0.15 = 0.4</p>
@@ -795,9 +3617,8 @@ BC_{ij} = 1 - \frac{2*0.4}{1 + 1}
 BC_{ij} = 1 - 0.4 = \mathbf{0.6}
 \]</span></p>
 </section>
-<section id="step-3---shotgun-metagenomics.-5" class="slide level2">
-<h2>Step 3 - Shotgun Metagenomics.</h2>
-<h3 id="analysis-of-microbiota-data-calculating-bray-curtis-dissimilarity-1">Analysis of microbiota data: Calculating Bray-Curtis Dissimilarity</h3>
+<section id="analysis-of-microbiota-data-calculating-bray-curtis-dissimilarity-1" class="slide level2">
+<h2>Analysis of microbiota data: Calculating Bray-Curtis Dissimilarity</h2>
 <div class="fragment">
 <p><strong>Interpretation:</strong></p>
 <ul>
@@ -824,9 +3645,8 @@ BC_{ij} = 1 - 0.4 = \mathbf{0.6}
 </ul>
 </div>
 </section>
-<section id="step-3---shotgun-metagenomics.-6" class="slide level2">
-<h2>Step 3 - Shotgun Metagenomics.</h2>
-<h3 id="analysis-of-microbiota-data---nmds">Analysis of microbiota data - NMDS</h3>
+<section id="analysis-of-microbiota-data-nmds" class="slide level2">
+<h2>Analysis of microbiota data: NMDS</h2>
 <div class="fragment">
 <ul>
 <li>NMDS (Non-metric Multidimensional Scaling) is an <strong>ordination</strong> technique, which is used to visualise <strong>similarities</strong> or <strong>dissimilarities</strong> in data.</li>
@@ -843,52 +3663,72 @@ BC_{ij} = 1 - 0.4 = \mathbf{0.6}
 </ul>
 </div>
 </section>
-<section id="step-3---shotgun-metagenomics.-7" class="slide level2">
-<h2>Step 3 - Shotgun Metagenomics.</h2>
-<h3 id="analysis-of-microbiota-data---lets-go-through-the-steps">Analysis of microbiota data - Let’s go through the steps</h3>
+<section id="analysis-of-microbiota-data---lets-go-through-the-steps" class="slide level2">
+<h2>Analysis of microbiota data - Let’s go through the steps</h2>
+<div class="fragment">
+<ol type="1">
+<li><p><strong>Calculate a dissimilarity matrix</strong><br>
+Use a dissimilarity measure (e.g., <em>Bray-Curtis</em>) to quantify differences between all sample pairs based on multivariate data (e.g., species abundance).</p></li>
+<li><p><strong>Rank the dissimilarity values</strong><br>
+Convert the dissimilarity matrix into <em>ranked distances</em>, from most similar to least similar.</p></li>
+<li><p><strong>Initialise with random coordinates</strong><br>
+I an a new 2D space, put samples at <strong>random</strong> starting positions in a low-dimensional space.</p></li>
+<li><p><strong>Calculate Euclidean distances</strong><br>
+Measure the <em>Euclidean distances</em> between all pairs of these random points in the reduced space.</p></li>
+<li><p><strong>Rank the Euclidean distances</strong><br>
+Rank these distances like done with the original dissimilarity differences in <strong>Step 2</strong>.</p></li>
+<li><p><strong>Compare ranked distances using Kruskal’s stress</strong><br>
+Use Kruskal’s stress function to compare the ranked dissimilarities with the ranked Euclidean distances. This metric quantifies how well the configuration preserves the order of the original dissimilarities.</p></li>
+<li><p><strong>Iteratively minimise stress</strong><br>
+Adjust the configuration repeatedly to <em>minimise stress</em>. If the stress is too high, this will be repeated new random configurations.</p></li>
+<li><p><strong>Obtain the NMDS solution</strong><br>
+The configuration with the <em>lowest stress</em> provides the final <em>NMDS scores</em> — a best-fit representation of the rank-based dissimilarities in reduced space.</p></li>
+<li><p><strong>Visualise the results</strong><br>
+Plot the NMDS scores in 2D (or 3D) space, where the <em>distance between points</em> reflects the <em>relative dissimilarity</em> between samples.</p></li>
+</ol>
+</div>
 <div class="fragment">
 <p>We can do this in R… We will need these two packages</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="co"># Let's get our bacteria dataframe again</span></span>
-<span id="cb2-2"><a href="#cb2-2"></a><span class="fu">library</span>(vegan)</span>
-<span id="cb2-3"><a href="#cb2-3"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="co"># Let's get our bacteria dataframe again</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="fu">library</span>(vegan)</span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <div class="fragment">
 <p>We will then need a dataframe These bacteria aren’t proportional, they are just amounts (don’t overthink it)</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a>bacteria_df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb3-2"><a href="#cb3-2"></a>  <span class="at">Klebsiella =</span> <span class="fu">c</span>(<span class="fl">0.75</span>, <span class="fl">0.25</span>, <span class="fl">0.5</span>, <span class="fl">0.7</span>, <span class="fl">0.3</span>, <span class="fl">0.75</span>),</span>
-<span id="cb3-3"><a href="#cb3-3"></a>  <span class="at">Pantonea =</span> <span class="fu">c</span>(<span class="fl">0.15</span>, <span class="fl">0.50</span>, <span class="fl">0.05</span>, <span class="fl">0.03</span>, <span class="fl">0.02</span>, <span class="fl">0.05</span>),</span>
-<span id="cb3-4"><a href="#cb3-4"></a>  <span class="at">Commensalibacter =</span> <span class="fu">c</span>(<span class="fl">0.10</span>, <span class="fl">0.02</span>, <span class="fl">0.01</span>, <span class="fl">0.01</span>, <span class="fl">0.01</span>, <span class="fl">0.01</span>),</span>
-<span id="cb3-5"><a href="#cb3-5"></a>  <span class="at">Serratia =</span> <span class="fu">c</span>(<span class="fl">0.01</span>, <span class="fl">0.05</span>, <span class="fl">0.01</span>, <span class="fl">0.01</span>, <span class="fl">0.02</span>, <span class="fl">0.01</span>),</span>
-<span id="cb3-6"><a href="#cb3-6"></a>  <span class="at">Spinghobacterium =</span> <span class="fu">c</span>(<span class="fl">0.01</span>, <span class="fl">0.15</span>, <span class="fl">0.01</span>, <span class="fl">0.02</span>, <span class="fl">0.01</span>, <span class="fl">0.01</span>),</span>
-<span id="cb3-7"><a href="#cb3-7"></a>  <span class="at">Acinetobacter =</span> <span class="fu">c</span>(<span class="fl">0.02</span>, <span class="fl">0.01</span>, <span class="fl">0.01</span>, <span class="fl">0.01</span>, <span class="fl">0.5</span>, <span class="fl">0.01</span>)</span>
-<span id="cb3-8"><a href="#cb3-8"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>bacteria_df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb2-2"><a href="#cb2-2"></a>  <span class="at">Klebsiella =</span> <span class="fu">c</span>(<span class="fl">0.75</span>, <span class="fl">0.25</span>, <span class="fl">0.5</span>, <span class="fl">0.7</span>, <span class="fl">0.3</span>, <span class="fl">0.75</span>),</span>
+<span id="cb2-3"><a href="#cb2-3"></a>  <span class="at">Pantonea =</span> <span class="fu">c</span>(<span class="fl">0.15</span>, <span class="fl">0.50</span>, <span class="fl">0.05</span>, <span class="fl">0.03</span>, <span class="fl">0.02</span>, <span class="fl">0.05</span>),</span>
+<span id="cb2-4"><a href="#cb2-4"></a>  <span class="at">Commensalibacter =</span> <span class="fu">c</span>(<span class="fl">0.10</span>, <span class="fl">0.02</span>, <span class="fl">0.01</span>, <span class="fl">0.01</span>, <span class="fl">0.01</span>, <span class="fl">0.01</span>),</span>
+<span id="cb2-5"><a href="#cb2-5"></a>  <span class="at">Serratia =</span> <span class="fu">c</span>(<span class="fl">0.01</span>, <span class="fl">0.05</span>, <span class="fl">0.01</span>, <span class="fl">0.01</span>, <span class="fl">0.02</span>, <span class="fl">0.01</span>),</span>
+<span id="cb2-6"><a href="#cb2-6"></a>  <span class="at">Spinghobacterium =</span> <span class="fu">c</span>(<span class="fl">0.01</span>, <span class="fl">0.15</span>, <span class="fl">0.01</span>, <span class="fl">0.02</span>, <span class="fl">0.01</span>, <span class="fl">0.01</span>),</span>
+<span id="cb2-7"><a href="#cb2-7"></a>  <span class="at">Acinetobacter =</span> <span class="fu">c</span>(<span class="fl">0.02</span>, <span class="fl">0.01</span>, <span class="fl">0.01</span>, <span class="fl">0.01</span>, <span class="fl">0.5</span>, <span class="fl">0.01</span>)</span>
+<span id="cb2-8"><a href="#cb2-8"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <div class="fragment">
 <p>This part will need a bit more breaking downis</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="fu">invisible</span>(<span class="fu">capture.output</span>(</span>
-<span id="cb4-2"><a href="#cb4-2"></a>  nmds <span class="ot">&lt;-</span> <span class="fu">metaMDS</span>(bacteria_df, <span class="at">distance =</span> <span class="st">"bray"</span>, <span class="at">k =</span> <span class="dv">2</span>, <span class="at">trymax =</span> <span class="dv">100</span>)</span>
-<span id="cb4-3"><a href="#cb4-3"></a>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">invisible</span>(<span class="fu">capture.output</span>(</span>
+<span id="cb3-2"><a href="#cb3-2"></a>  nmds <span class="ot">&lt;-</span> <span class="fu">metaMDS</span>(bacteria_df, <span class="at">distance =</span> <span class="st">"bray"</span>, <span class="at">k =</span> <span class="dv">2</span>, <span class="at">trymax =</span> <span class="dv">100</span>)</span>
+<span id="cb3-3"><a href="#cb3-3"></a>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>The <code>metaMDS()</code> function:</p>
 <ul>
 <li><p>The <code>metaMDS()</code> function performs NMDS by using multiple random starts to find a stable solution.</p></li>
 <li><p>It standardises the output for easier interpretation and adds species scores to the site ordination. While <code>metaMDS()</code> itself doesn’t directly compute NMDS - when we add the relevant information inside this function, it will.</p></li>
 <li><p>We have set <code>k = 2</code> because we want to reduce the data to two dimensions (simplifying the data).</p></li>
-<li><p>The <code>trymax</code> parameter, set to 100 increases the number of “random starts” to help the algorithm find a stable, low-stress solution (stress is something we will go into more detail on in a bit).</p></li>
+<li><p>The <code>trymax</code> parameter, set to 100 increases the number of “random starts” to help the algorithm find a stable, “low-stress” solution.</p></li>
 </ul>
 </div>
 </section>
-<section id="step-3---shotgun-metagenomics.-8" class="slide level2">
-<h2>Step 3 - Shotgun Metagenomics.</h2>
-<h3 id="analysis-of-microbiota-data---getting-the-plot">Analysis of microbiota data - getting the plot</h3>
+<section id="analysis-of-microbiota-data---getting-the-plot" class="slide level2">
+<h2>Analysis of microbiota data - getting the plot</h2>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>nmds_scores <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(<span class="fu">scores</span>(nmds, <span class="at">display =</span> <span class="st">"sites"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a>nmds_scores <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(<span class="fu">scores</span>(nmds, <span class="at">display =</span> <span class="st">"sites"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
@@ -905,73 +3745,72 @@ BC_{ij} = 1 - 0.4 = \mathbf{0.6}
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a>nmds_scores<span class="sc">$</span>Fruit <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Argan"</span>, <span class="st">"Peach"</span>, <span class="st">"Apricot"</span>, <span class="st">"Grapefruit"</span>, <span class="st">"Orange"</span>, <span class="st">"Tangerine"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a>nmds_scores<span class="sc">$</span>Fruit <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Argan"</span>, <span class="st">"Peach"</span>, <span class="st">"Apricot"</span>, <span class="st">"Grapefruit"</span>, <span class="st">"Orange"</span>, <span class="st">"Tangerine"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>This part simply assigns our scores to the fruits</p>
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a>nmds_plot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(nmds_scores,</span>
-<span id="cb8-2"><a href="#cb8-2"></a>                    <span class="fu">aes</span>(<span class="at">x =</span> NMDS1, <span class="at">y =</span> NMDS2, <span class="at">colour =</span> Fruit)) <span class="sc">+</span></span>
-<span id="cb8-3"><a href="#cb8-3"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">4</span>) <span class="sc">+</span></span>
-<span id="cb8-4"><a href="#cb8-4"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
-<span id="cb8-5"><a href="#cb8-5"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"NMDS Plot of Bacterial Composition"</span>,</span>
-<span id="cb8-6"><a href="#cb8-6"></a>       <span class="at">subtitle =</span> <span class="st">"Colored by Fruit Type"</span>,</span>
-<span id="cb8-7"><a href="#cb8-7"></a>       <span class="at">x =</span> <span class="st">"NMDS1"</span>, <span class="at">y =</span> <span class="st">"NMDS2"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a>nmds_plot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(nmds_scores,</span>
+<span id="cb7-2"><a href="#cb7-2"></a>                    <span class="fu">aes</span>(<span class="at">x =</span> NMDS1, <span class="at">y =</span> NMDS2, <span class="at">colour =</span> Fruit)) <span class="sc">+</span></span>
+<span id="cb7-3"><a href="#cb7-3"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">4</span>) <span class="sc">+</span></span>
+<span id="cb7-4"><a href="#cb7-4"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb7-5"><a href="#cb7-5"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"NMDS Plot of Bacterial Composition"</span>,</span>
+<span id="cb7-6"><a href="#cb7-6"></a>       <span class="at">subtitle =</span> <span class="st">"Colored by Fruit Type"</span>,</span>
+<span id="cb7-7"><a href="#cb7-7"></a>       <span class="at">x =</span> <span class="st">"NMDS1"</span>, <span class="at">y =</span> <span class="st">"NMDS2"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Finally, we can output our plot</p>
 </div>
 </section>
-<section id="step-3---shotgun-metagenomics.-9" class="slide level2">
-<h2>Step 3 - Shotgun Metagenomics.</h2>
-<h3 id="analysis-of-microbiota-data---outputting-this">Analysis of microbiota data - Outputting this</h3>
+<section id="analysis-of-microbiota-data---outputting-this" class="slide level2">
+<h2>Analysis of microbiota data - Outputting this</h2>
 <div class="column" style="width:40%;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a><span class="co"># Let's get our bacteria dataframe again</span></span>
-<span id="cb9-2"><a href="#cb9-2"></a><span class="fu">library</span>(vegan)</span>
-<span id="cb9-3"><a href="#cb9-3"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb9-4"><a href="#cb9-4"></a></span>
-<span id="cb9-5"><a href="#cb9-5"></a>bacteria_df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb9-6"><a href="#cb9-6"></a>  <span class="at">Klebsiella =</span> <span class="fu">c</span>(<span class="fl">0.75</span>, <span class="fl">0.25</span>, <span class="fl">0.5</span>, <span class="fl">0.7</span>, <span class="fl">0.3</span>, <span class="fl">0.75</span>),</span>
-<span id="cb9-7"><a href="#cb9-7"></a>  <span class="at">Pantonea =</span> <span class="fu">c</span>(<span class="fl">0.15</span>, <span class="fl">0.50</span>, <span class="fl">0.05</span>, <span class="fl">0.03</span>, <span class="fl">0.02</span>, <span class="fl">0.05</span>),</span>
-<span id="cb9-8"><a href="#cb9-8"></a>  <span class="at">Commensalibacter =</span> <span class="fu">c</span>(<span class="fl">0.10</span>, <span class="fl">0.02</span>, <span class="fl">0.01</span>, <span class="fl">0.01</span>, <span class="fl">0.01</span>, <span class="fl">0.01</span>),</span>
-<span id="cb9-9"><a href="#cb9-9"></a>  <span class="at">Serratia =</span> <span class="fu">c</span>(<span class="fl">0.01</span>, <span class="fl">0.05</span>, <span class="fl">0.01</span>, <span class="fl">0.01</span>, <span class="fl">0.02</span>, <span class="fl">0.01</span>),</span>
-<span id="cb9-10"><a href="#cb9-10"></a>  <span class="at">Spinghobacterium =</span> <span class="fu">c</span>(<span class="fl">0.01</span>, <span class="fl">0.15</span>, <span class="fl">0.01</span>, <span class="fl">0.02</span>, <span class="fl">0.01</span>, <span class="fl">0.01</span>),</span>
-<span id="cb9-11"><a href="#cb9-11"></a>  <span class="at">Acinetobacter =</span> <span class="fu">c</span>(<span class="fl">0.02</span>, <span class="fl">0.01</span>, <span class="fl">0.01</span>, <span class="fl">0.01</span>, <span class="fl">0.5</span>, <span class="fl">0.01</span>)</span>
-<span id="cb9-12"><a href="#cb9-12"></a>)</span>
-<span id="cb9-13"><a href="#cb9-13"></a></span>
-<span id="cb9-14"><a href="#cb9-14"></a><span class="co"># Use metaMDS to generate the ordination with lowest stress</span></span>
-<span id="cb9-15"><a href="#cb9-15"></a><span class="fu">invisible</span>(<span class="fu">capture.output</span>(</span>
-<span id="cb9-16"><a href="#cb9-16"></a>  nmds <span class="ot">&lt;-</span> <span class="fu">metaMDS</span>(bacteria_df, <span class="at">distance =</span> <span class="st">"bray"</span>, <span class="at">k =</span> <span class="dv">2</span>, <span class="at">trymax =</span> <span class="dv">100</span>)</span>
-<span id="cb9-17"><a href="#cb9-17"></a>))</span>
-<span id="cb9-18"><a href="#cb9-18"></a></span>
-<span id="cb9-19"><a href="#cb9-19"></a><span class="co"># Extract site scores</span></span>
-<span id="cb9-20"><a href="#cb9-20"></a>nmds_scores <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(<span class="fu">scores</span>(nmds, <span class="at">display =</span> <span class="st">"sites"</span>))</span>
-<span id="cb9-21"><a href="#cb9-21"></a></span>
-<span id="cb9-22"><a href="#cb9-22"></a><span class="co"># Add fruit names</span></span>
-<span id="cb9-23"><a href="#cb9-23"></a>nmds_scores<span class="sc">$</span>Fruit <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Argan"</span>, <span class="st">"Peach"</span>, <span class="st">"Apricot"</span>, <span class="st">"Grapefruit"</span>, <span class="st">"Orange"</span>, <span class="st">"Tangerine"</span>)</span>
-<span id="cb9-24"><a href="#cb9-24"></a></span>
-<span id="cb9-25"><a href="#cb9-25"></a><span class="co"># Plot the NMDS results</span></span>
-<span id="cb9-26"><a href="#cb9-26"></a>nmds_plot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(nmds_scores,</span>
-<span id="cb9-27"><a href="#cb9-27"></a>                    <span class="fu">aes</span>(<span class="at">x =</span> NMDS1, <span class="at">y =</span> NMDS2, <span class="at">colour =</span> Fruit)) <span class="sc">+</span></span>
-<span id="cb9-28"><a href="#cb9-28"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">4</span>) <span class="sc">+</span></span>
-<span id="cb9-29"><a href="#cb9-29"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
-<span id="cb9-30"><a href="#cb9-30"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"NMDS Plot of Bacterial Composition"</span>,</span>
-<span id="cb9-31"><a href="#cb9-31"></a>       <span class="at">subtitle =</span> <span class="st">"Colored by Fruit Type"</span>,</span>
-<span id="cb9-32"><a href="#cb9-32"></a>       <span class="at">x =</span> <span class="st">"NMDS1"</span>, <span class="at">y =</span> <span class="st">"NMDS2"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a><span class="co"># Let's get our bacteria dataframe again</span></span>
+<span id="cb8-2"><a href="#cb8-2"></a><span class="fu">library</span>(vegan)</span>
+<span id="cb8-3"><a href="#cb8-3"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb8-4"><a href="#cb8-4"></a></span>
+<span id="cb8-5"><a href="#cb8-5"></a>bacteria_df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb8-6"><a href="#cb8-6"></a>  <span class="at">Klebsiella =</span> <span class="fu">c</span>(<span class="fl">0.75</span>, <span class="fl">0.25</span>, <span class="fl">0.5</span>, <span class="fl">0.7</span>, <span class="fl">0.3</span>, <span class="fl">0.75</span>),</span>
+<span id="cb8-7"><a href="#cb8-7"></a>  <span class="at">Pantonea =</span> <span class="fu">c</span>(<span class="fl">0.15</span>, <span class="fl">0.50</span>, <span class="fl">0.05</span>, <span class="fl">0.03</span>, <span class="fl">0.02</span>, <span class="fl">0.05</span>),</span>
+<span id="cb8-8"><a href="#cb8-8"></a>  <span class="at">Commensalibacter =</span> <span class="fu">c</span>(<span class="fl">0.10</span>, <span class="fl">0.02</span>, <span class="fl">0.01</span>, <span class="fl">0.01</span>, <span class="fl">0.01</span>, <span class="fl">0.01</span>),</span>
+<span id="cb8-9"><a href="#cb8-9"></a>  <span class="at">Serratia =</span> <span class="fu">c</span>(<span class="fl">0.01</span>, <span class="fl">0.05</span>, <span class="fl">0.01</span>, <span class="fl">0.01</span>, <span class="fl">0.02</span>, <span class="fl">0.01</span>),</span>
+<span id="cb8-10"><a href="#cb8-10"></a>  <span class="at">Spinghobacterium =</span> <span class="fu">c</span>(<span class="fl">0.01</span>, <span class="fl">0.15</span>, <span class="fl">0.01</span>, <span class="fl">0.02</span>, <span class="fl">0.01</span>, <span class="fl">0.01</span>),</span>
+<span id="cb8-11"><a href="#cb8-11"></a>  <span class="at">Acinetobacter =</span> <span class="fu">c</span>(<span class="fl">0.02</span>, <span class="fl">0.01</span>, <span class="fl">0.01</span>, <span class="fl">0.01</span>, <span class="fl">0.5</span>, <span class="fl">0.01</span>)</span>
+<span id="cb8-12"><a href="#cb8-12"></a>)</span>
+<span id="cb8-13"><a href="#cb8-13"></a></span>
+<span id="cb8-14"><a href="#cb8-14"></a><span class="co"># Use metaMDS to generate the ordination with lowest stress</span></span>
+<span id="cb8-15"><a href="#cb8-15"></a><span class="fu">invisible</span>(<span class="fu">capture.output</span>(</span>
+<span id="cb8-16"><a href="#cb8-16"></a>  nmds <span class="ot">&lt;-</span> <span class="fu">c</span>(bacteria_df, <span class="at">distance =</span> <span class="st">"bray"</span>, <span class="at">k =</span> <span class="dv">2</span>, <span class="at">trymax =</span> <span class="dv">100</span>)</span>
+<span id="cb8-17"><a href="#cb8-17"></a>))</span>
+<span id="cb8-18"><a href="#cb8-18"></a></span>
+<span id="cb8-19"><a href="#cb8-19"></a><span class="co"># Extract site scores</span></span>
+<span id="cb8-20"><a href="#cb8-20"></a>nmds_scores <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(<span class="fu">scores</span>(nmds, <span class="at">display =</span> <span class="st">"sites"</span>))</span>
+<span id="cb8-21"><a href="#cb8-21"></a></span>
+<span id="cb8-22"><a href="#cb8-22"></a><span class="co"># Add fruit names</span></span>
+<span id="cb8-23"><a href="#cb8-23"></a>nmds_scores<span class="sc">$</span>Fruit <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Argan"</span>, <span class="st">"Peach"</span>, <span class="st">"Apricot"</span>, <span class="st">"Grapefruit"</span>, <span class="st">"Orange"</span>, <span class="st">"Tangerine"</span>)</span>
+<span id="cb8-24"><a href="#cb8-24"></a></span>
+<span id="cb8-25"><a href="#cb8-25"></a><span class="co"># Plot the NMDS results</span></span>
+<span id="cb8-26"><a href="#cb8-26"></a>nmds_plot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(nmds_scores,</span>
+<span id="cb8-27"><a href="#cb8-27"></a>                    <span class="fu">aes</span>(<span class="at">x =</span> NMDS1, <span class="at">y =</span> NMDS2, <span class="at">colour =</span> Fruit)) <span class="sc">+</span></span>
+<span id="cb8-28"><a href="#cb8-28"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">4</span>) <span class="sc">+</span></span>
+<span id="cb8-29"><a href="#cb8-29"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb8-30"><a href="#cb8-30"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"NMDS Plot of Bacterial Composition"</span>,</span>
+<span id="cb8-31"><a href="#cb8-31"></a>       <span class="at">subtitle =</span> <span class="st">"Colored by Fruit Type"</span>,</span>
+<span id="cb8-32"><a href="#cb8-32"></a>       <span class="at">x =</span> <span class="st">"NMDS1"</span>, <span class="at">y =</span> <span class="st">"NMDS2"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <div class="column" style="width:60%;">
 <div class="cell">
 <div class="cell-output-display">
-<p><img data-src="index_files/figure-revealjs/unnamed-chunk-11-1.png" width="960"></p>
+<p><img data-src="index_files/figure-revealjs/unnamed-chunk-12-1.png" width="960"></p>
 </div>
 </div>
 </div>
 
-<p><img src="./assets/dpcfd_logo.png" class="slide-logo"></p>
+<p><img src="images/QR.png" class="slide-logo"></p>
 <div class="footer footer-default">
-<p>Katie Millar | PhD Student |</p>
+<p>Katie Millar | PhD Student</p>
 </div>
 </section>
     </div>
