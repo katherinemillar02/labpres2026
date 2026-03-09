@@ -199,44 +199,49 @@ Their results showed that
 ## Choosing a protocol
 
 ::: fragment
-After using the above paper as a source, we developed a protocol that would involve testing the sterility of the fly using incubated LB plates.
+-   After using the above paper as a source, we developed a protocol that would involve testing the sterility of the fly using incubated LB plates.
 :::
 
 ::: fragment
 We decided on a set protocol:
 
-- 1 min 30 sec bleach in bijou tube, mixing on vortex — remove
-- 30 sec PBS, mixing on vortex — remove
-- 30 sec PBS, mixing on vortex — remove
-- 30 sec PBS, mixing on vortex — remove
+- 1 min 30 sec bleach in bijou tube, mixing on vortex, then remove.
+- 30 sec PBS, mixing on vortex, then remove.
+- 30 sec PBS, mixing on vortex, then remove.
+- 30 sec PBS, mixing on vortex, then remove.
 :::
 
 
-## How it went
+## The first trials: 
 
 ::: fragment
-- Leaving the fly in bleach for longer than 1:30–2:00 may break appendages
-- Wash must be under 1 min to avoid gut exposure ruining experiment
-:::
-
-
-## Results
-
-::: fragment
-This also seemed to result in flies that were not actually clean...
+- We found that leaving the fly in bleach for longer than 1:30 – 2:00 minutes may break appendages, the fly wil burst open! 
+- The wash must be under 1 min to avoid gut exposure ruining experiment
 :::
 
 ::: fragment
-![](images/dirty.png){width="100%"}
+-  In a lot of cases, there was trouble actually getting the flies out of the bijou tube. 
 :::
-::: column
-![](images/clean.png){width="100%"}
+
+::: {.fragment}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![](images/dirty.png)
 :::
+
+::: {.column width="50%"}
+![](images/clean.png)
 :::
+
+::::
+
 :::
 
 
-## Table of Results
+
+## Attempt after attempt:
 
 So after many trials and errors:
 
@@ -255,57 +260,81 @@ kable(sterilisation) %>%
 -   We eventually found that using filter paper to on top of the bijou tube, allowing the solution to drain through so the flies could be more easily picked up, actually resulted in having sterile flies, and clean plates.
 :::
 
-## Quiz question time!
+## Quiz question time - Round 2!
 
-Please do this.
-
-## Guts vs. Whole flies
+-   It is now time for the second  round of the quiz!
 
 ::: fragment
--   In insect microbiota studies, studies usually vary whether using the whole gut, or the whole fly to analyse the microbiota.
+-   Here are some tips and rules:
+
+    -   Answer the questions as you go along, then click Submit.
+
+    -   For each question, you will be told if your answer is incorrect or correct, do not try again - this is cheating.
+
+    -   Do not refresh the page, this will reset everything and is cheating.
+
+    -   When you have answered all questions, at the bottom of your page, your total points for this round will be on your screen. Please share this, and do not cheat!!
 :::
 
-::: fragment
--   Some studies have shown that there is no difference between using the whole gut or the whole fly, but there is still argument that you're missing a lot with getting whole fly bacteria, rather than just gut bacteria.
+## Whole Flies vs Gut Samples
+
+::: {.fragment}
+- In insect microbiota studies, researchers often differ in whether they analyse the **whole gut** or the **entire fly**.
 :::
 
-::: fragment
--   Even if flies are surface-sterilised, whole-fly samples may still include microbes from tissues like the reproductive organs, this could dilute the presence of actual gut bacteria. Some studies have even shown that in Tephritids, there are differences between gut and reproductive organs.
+::: {.fragment}
+- Some studies report **no major differences** between these approaches.
 :::
 
-::: fragment
--   We decided to focus on just guts, and not whole flies.
+::: {.fragment}
+- However, this may depend on the **sequencing approach used**.
 :::
+
+
+## Limitations of Whole-Fly Sampling
+
+::: {.fragment}
+- Whole-fly samples may **mask the true gut microbiota**, because bacteria from other tissues are also included.
+:::
+
+::: {.fragment}
+- Even after surface sterilisation, microbes can remain in tissues such as the **reproductive organs**.
+:::
+
+::: {.fragment}
+- In **Tephritid flies**, studies have shown differences between the microbiota of the **gut and reproductive tissues**.
+:::
+
+::: {.fragment}
+- For this reason, **we focused specifically on gut samples rather than whole flies**.
+:::
+
+## Gut Dissections in the lab.  
 
 ::: fragment
 ![](images/dissection.png)
 :::
 
 
-## Gut Dissection
+## The Medfly gut. 
 
+::: fragment
 -   Foregut
+::: 
+
+::: fragment
 -   Midgut
+::: 
+
+::: fragment
 -   Hindgut
+::: 
 
 
 
-::: fragment
-![](images/dissection.png){width="40%"}
-:::
 
-## Understanding the Medfly gut.
 
-::: fragment
--   It has the foregut, midgut, and hindgut.
-:::
-
-::: fragment
--   During metamorphosis, the entire larval gut is broken down and replaced with a newly formed adult gut.
--   This can influence forms of transmission throughout life stages.
-:::
-
-## Understanding the Medfly gut.
+## Mechanisms of the Medfly gut.
 
 ::: fragment
 -   It has the foregut, midgut, and hindgut.
@@ -313,10 +342,15 @@ Please do this.
 
 ::: fragment
 -   During metamorphosis, the entire larval gut is broken down and replaced with a newly formed adult gut.
+:::
+
+::: fragment
 -   This can influence forms of transmission throughout life stages.
 :::
 
-## Modes of microbial transmission
+
+
+## Mixed modes of microbial transmission
 
 ::: fragment
 -   There are 3 modes of microbial transmission.
@@ -338,6 +372,8 @@ Please do this.
 -   All of these together are referred to as **mixed modes of microbial transmission**.
 :::
 
+## Microbial transmission in Medfly
+
 ::: fragment
 -   In Medfly, it has been **suggested** that horizontal transmission occurs.
 -   Larvae have been shown to shed bacteria into the fruit substrate, and other larvae may acquire those microbes from the shared environment (the fruit).
@@ -352,11 +388,24 @@ Please do this.
 -   The current data on transmission in Medfly doesn't truly show that bacteria between hosts are identical.
 :::
 
-## Quiz question time!
+## Quiz question time - Round 3!
 
-Please do this.
+-   It is now time for the third round of the quiz!
 
-## Diversity Metrics
+::: fragment
+-   Here are some tips and rules:
+
+    -   Answer the questions as you go along, then click Submit.
+
+    -   For each question, you will be told if your answer is incorrect or correct, do not try again - this is cheating.
+
+    -   Do not refresh the page, this will reset everything and is cheating.
+
+    -   When you have answered all questions, at the bottom of your page, your total points for this round will be on your screen. Please share this, and do not cheat!!
+:::
+
+
+## Microbial Analysis - Diversity Metrics
 
 ::: fragment
 -   In analysis of the microbiota, there are two diversity metrics. These are **Alpha Diversity** and **Beta Diversity**.
@@ -378,11 +427,18 @@ Please do this.
 
 ::: fragment
 -   Bray-Curtis Dissimilarity can be described as a statistic used to quantify the **dissimilarity** in composition of species between **two** different sites.
-
--   It works by a formula outputting a value between 0 and 1, with 0 meaning the sites are exactly the same, to very similar, and 1 being they are very dissimilar.
-
--   It works on species abundance.
 :::
+
+::: fragment
+-   Mathematically, it works using species abundance. 
+:::
+
+
+::: fragment
+-   It works by a formula outputting a value between 0 and 1, with 0 meaning the sites are exactly the same, to very similar, and 1 being they are very dissimilar.
+::: 
+
+
 
 ::: fragment
 -   The formula used in **Bray-Curtis Dissimilarity** is shown below:
