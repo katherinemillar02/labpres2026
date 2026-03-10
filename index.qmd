@@ -60,7 +60,7 @@ title-slide-attributes:
 ![](images/winners.png){width="24%"}
 :::
 
-## Beginning with fruit flies. 
+## Beginning with fruit flies.
 
 ::: fragment
 -   Within fruit flies, we have the two families; Drosophilidae, ![](images/drosophilidae.png){width="30%"}
@@ -205,28 +205,25 @@ Their results showed that
 ::: fragment
 We decided on a set protocol:
 
-- 1 min 30 sec bleach in bijou tube, mixing on vortex, then remove.
-- 30 sec PBS, mixing on vortex, then remove.
-- 30 sec PBS, mixing on vortex, then remove.
-- 30 sec PBS, mixing on vortex, then remove.
+-   1 min 30 sec bleach in bijou tube, mixing on vortex, then remove.
+-   30 sec PBS, mixing on vortex, then remove.
+-   30 sec PBS, mixing on vortex, then remove.
+-   30 sec PBS, mixing on vortex, then remove.
 :::
 
-
-## The first trials: 
+## The first trials:
 
 ::: fragment
-- We found that leaving the fly in bleach for longer than 1:30 – 2:00 minutes may break appendages, the fly wil burst open! 
-- The wash must be under 1 min to avoid gut exposure ruining experiment
+-   We found that leaving the fly in bleach for longer than 1:30 -- 2:00 minutes may break appendages, the fly wil burst open!
+-   The wash must be under 1 min to avoid gut exposure ruining experiment
 :::
 
 ::: fragment
--  In a lot of cases, there was trouble actually getting the flies out of the bijou tube. 
+-   In a lot of cases, there was trouble actually getting the flies out of the bijou tube.
 :::
 
-::: {.fragment}
-
-:::: {.columns}
-
+::: fragment
+::: columns
 ::: {.column width="50%"}
 ![](images/dirty.png)
 :::
@@ -234,12 +231,8 @@ We decided on a set protocol:
 ::: {.column width="50%"}
 ![](images/clean.png)
 :::
-
-::::
-
 :::
-
-
+:::
 
 ## Attempt after attempt:
 
@@ -262,7 +255,7 @@ kable(sterilisation) %>%
 
 ## Quiz question time - Round 2!
 
--   It is now time for the second  round of the quiz!
+-   It is now time for the second round of the quiz!
 
 ::: fragment
 -   Here are some tips and rules:
@@ -278,61 +271,55 @@ kable(sterilisation) %>%
 
 ## Whole Flies vs Gut Samples
 
-::: {.fragment}
-- In insect microbiota studies, researchers often differ in whether they analyse the **whole gut** or the **entire fly**.
+::: fragment
+-   In insect microbiota studies, researchers often differ in whether they analyse the **whole gut** or the **entire fly**.
 :::
 
-::: {.fragment}
-- Some studies report **no major differences** between these approaches.
+::: fragment
+-   Some studies report **no major differences** between these approaches.
 :::
 
-::: {.fragment}
-- However, this may depend on the **sequencing approach used**.
+::: fragment
+-   However, this may depend on the **sequencing approach used**.
 :::
-
 
 ## Limitations of Whole-Fly Sampling
 
-::: {.fragment}
-- Whole-fly samples may **mask the true gut microbiota**, because bacteria from other tissues are also included.
+::: fragment
+-   Whole-fly samples may **mask the true gut microbiota**, because bacteria from other tissues are also included.
 :::
 
-::: {.fragment}
-- Even after surface sterilisation, microbes can remain in tissues such as the **reproductive organs**.
+::: fragment
+-   Even after surface sterilisation, microbes can remain in tissues such as the **reproductive organs**.
 :::
 
-::: {.fragment}
-- In **Tephritid flies**, studies have shown differences between the microbiota of the **gut and reproductive tissues**.
+::: fragment
+-   In **Tephritid flies**, studies have shown differences between the microbiota of the **gut and reproductive tissues**.
 :::
 
-::: {.fragment}
-- For this reason, **we focused specifically on gut samples rather than whole flies**.
+::: fragment
+-   For this reason, **we focused specifically on gut samples rather than whole flies**.
 :::
 
-## Gut Dissections in the lab.  
+## Gut Dissections in the lab.
 
 ::: fragment
 ![](images/dissection.png)
 :::
 
-
-## The Medfly gut. 
+## The Medfly gut.
 
 ::: fragment
 -   Foregut
-::: 
+:::
 
 ::: fragment
 -   Midgut
-::: 
+:::
 
 ::: fragment
 -   Hindgut
-::: 
-
-
-
-
+:::
 
 ## Mechanisms of the Medfly gut.
 
@@ -347,8 +334,6 @@ kable(sterilisation) %>%
 ::: fragment
 -   This can influence forms of transmission throughout life stages.
 :::
-
-
 
 ## Mixed modes of microbial transmission
 
@@ -376,11 +361,17 @@ kable(sterilisation) %>%
 
 ::: fragment
 -   In Medfly, it has been **suggested** that horizontal transmission occurs.
+:::
+
+::: fragment
 -   Larvae have been shown to shed bacteria into the fruit substrate, and other larvae may acquire those microbes from the shared environment (the fruit).
 :::
 
 ::: fragment
 -   However, similar to vertical transmission, this has not been directly proven.
+:::
+
+::: fragment
 -   This could be tested using a high-throughput sequencing approach to identify identical bacterial strains shared between hosts.
 :::
 
@@ -403,7 +394,6 @@ kable(sterilisation) %>%
 
     -   When you have answered all questions, at the bottom of your page, your total points for this round will be on your screen. Please share this, and do not cheat!!
 :::
-
 
 ## Microbial Analysis - Diversity Metrics
 
@@ -430,15 +420,12 @@ kable(sterilisation) %>%
 :::
 
 ::: fragment
--   Mathematically, it works using species abundance. 
+-   Mathematically, it works using species abundance.
 :::
-
 
 ::: fragment
 -   It works by a formula outputting a value between 0 and 1, with 0 meaning the sites are exactly the same, to very similar, and 1 being they are very dissimilar.
-::: 
-
-
+:::
 
 ::: fragment
 -   The formula used in **Bray-Curtis Dissimilarity** is shown below:
@@ -448,15 +435,39 @@ knitr::include_graphics("images/mathsanalysis.png")
 ```
 :::
 
-## Analysis of microbiota data - Bray-Curtis Dissimilarity in action
+## Bray Curtis in action - 16S Darrington Study
 
 ::: fragment
 -   Lets go through an example of how **Bray-Curtis Dissimilarity** works, using data from [Darrington et al. (2022)](https://www.microbiologyresearch.org/content/journal/mgen/10.1099/mgen.0.000801#tab2).
 :::
 
 ::: fragment
--   Because Bray-Curtis Dissimilarity is based on a calculation of two different sites, we will use Medfly larval samples taken from two different fruits (Argan 🌰 and Peach 🍑, taken from Morocco and Greece respectively). That have been sequenced through 16S rRNA sequencing.
+-   This study investigates the composition of the medfly gut microbiome, looking at lab flies using different artificial substrates, and wild flies using different fruits.
 :::
+
+::: fragment
+Microbial communities were characterised using 16S rRNA gene sequencing, allowing the relative abundance of bacterial taxa in each sample to be quantified.
+:::
+
+## Bray Curtis Dissimilarity Example
+
+::: fragment
+-   Because Bray--Curtis dissimilarity compares the composition of two communities, we will focus on two larval medfly samples.
+:::
+
+::: fragment
+-   These samples come from larvae developing in different host fruits:
+
+    -   Argan
+
+    -   Peach
+:::
+
+::: fragment
+-   We will compare the bacterial community composition of these two samples to calculate their Bray--Curtis dissimilarity
+:::
+
+## Calculating Bray Curtis Dissimilarity
 
 ::: fragment
 ::: columns
@@ -487,7 +498,7 @@ knitr::include_graphics("images/mathsanalysis.png")
 :::
 :::
 
-## Analysis of microbiota data: Calculating Bray-Curtis Dissimilarity
+## Breaking down the equation
 
 C~ij~ = the sum of **lower** counts found at both sites
 
@@ -507,9 +518,13 @@ Now that we have:
 
 $$
 C_{ij} = 0.4 \\
-$$ $$
+$$
+
+$$
 S_i = 1 \\
-$$ $$
+$$
+
+$$
 S_j = 1
 $$
 
@@ -537,240 +552,188 @@ $$
 BC_{ij} = 1 - 0.4 = \mathbf{0.6}
 $$
 
-## Analysis of microbiota data: Calculating Bray-Curtis Dissimilarity
+## Interpreting the results
 
 ::: fragment
-**Interpretation:**
-
 -   Using this formula we have worked out the Bray-Curtis Dissimilarity of the two Medfly microbiotas from Argan and Peach to be **0.6**.
 :::
 
 ::: fragment
--   Now let's go into what this means. Below shows the scale, where Bray-Curtis dissimilarity will range from 0 - 1, with 1 being the largest amount of dissimilarity between the two samples.
-
 ```{r echo=FALSE, fig.align="center"}
 knitr::include_graphics("images/braycurtisscale.png")
 ```
 :::
 
 ::: fragment
--   From the scale, we can conclude that two samples are not similar, not are they massively dissimilar. But they are more dissimilar than similar! You might be able to see this makes somewhat sense by going back to the dataframe. To put it simply, a Bray-Curtis dissimilarity of **0.6** indicates moderate dissimilarity between the two sites.
+-   A value of 0.6 indicates moderate dissimilarity between the two samples.
 :::
 
-## Analysis of microbiota data: NMDS
+## Analysis Methods -- Visualising Results
 
 ::: fragment
--   NMDS (Non-metric Multidimensional Scaling) is an **ordination** technique, which is used to visualise **similarities** or **dissimilarities** in data.
-:::
-
-::: fragment
--   NMDS is used to reduce the dimensionality of complex data sets, (i.e the abundance of microbes across different sites), to allow for visualisation in a 2D space, (although this can be 3D).
+-   **NMDS (Non-metric Multidimensional Scaling)** is an **ordination technique** used to visualise **similarities or differences** between samples.
 :::
 
 ::: fragment
--   **NMDS** is a non-linear method. It doesn't preserve actual distances between samples, but instead maintains the **rank order of those distances**, which is especially useful when working with complex samples, such as in ecological or microbial community data.
-:::
-
-## Analysis of microbiota data - Let's go through the steps
-
-::: fragment
-1.  **Calculate a dissimilarity matrix**\
-    Use a dissimilarity measure (e.g., *Bray-Curtis*) to quantify differences between all sample pairs based on multivariate data (e.g., species abundance).
-
-2.  **Rank the dissimilarity values**\
-    Convert the dissimilarity matrix into *ranked distances*, from most similar to least similar.
-
-3.  **Initialise with random coordinates**\
-    I an a new 2D space, put samples at **random** starting positions in a low-dimensional space.
-
-4.  **Calculate Euclidean distances**\
-    Measure the *Euclidean distances* between all pairs of these random points in the reduced space.
-
-5.  **Rank the Euclidean distances**\
-    Rank these distances like done with the original dissimilarity differences in **Step 2**.
-
-6.  **Compare ranked distances using Kruskal's stress**\
-    Use Kruskal's stress function to compare the ranked dissimilarities with the ranked Euclidean distances. This metric quantifies how well the configuration preserves the order of the original dissimilarities.
-
-7.  **Iteratively minimise stress**\
-    Adjust the configuration repeatedly to *minimise stress*. If the stress is too high, this will be repeated new random configurations.
-
-8.  **Obtain the NMDS solution**\
-    The configuration with the *lowest stress* provides the final *NMDS scores* --- a best-fit representation of the rank-based dissimilarities in reduced space.
-
-9.  **Visualise the results**\
-    Plot the NMDS scores in 2D (or 3D) space, where the *distance between points* reflects the *relative dissimilarity* between samples.
+-   It reduces **high-dimensional data** (e.g. microbial abundances across many sites) into a **2D or 3D space**, making complex patterns easier to interpret.
 :::
 
 ::: fragment
-We can do this in R... We will need these two packages
-
-```{r, echo=TRUE, message=FALSE, warning=FALSE,  eval=F, echo = T }
-# Let's get our bacteria dataframe again
-library(vegan)
-library(tidyverse)
-```
+-   Unlike linear methods, **NMDS is non-linear**.
 :::
 
 ::: fragment
-We will then need a dataframe These bacteria aren't proportional, they are just amounts (don't overthink it)
-
-```{r, echo=TRUE, message=FALSE, warning=FALSE,  eval=F, echo = T }
-bacteria_df <- data.frame(
-  Klebsiella = c(0.75, 0.25, 0.5, 0.7, 0.3, 0.75),
-  Pantonea = c(0.15, 0.50, 0.05, 0.03, 0.02, 0.05),
-  Commensalibacter = c(0.10, 0.02, 0.01, 0.01, 0.01, 0.01),
-  Serratia = c(0.01, 0.05, 0.01, 0.01, 0.02, 0.01),
-  Spinghobacterium = c(0.01, 0.15, 0.01, 0.02, 0.01, 0.01),
-  Acinetobacter = c(0.02, 0.01, 0.01, 0.01, 0.5, 0.01)
-)
-```
+-   It does **not preserve exact distances** between samples, but instead preserves the **rank order of dissimilarities**.
 :::
 
 ::: fragment
-This part will need a bit more breaking downis
-
-```{r, echo=TRUE, message=FALSE, warning=FALSE,  eval=F, echo = T }
-invisible(capture.output(
-  nmds <- metaMDS(bacteria_df, distance = "bray", k = 2, trymax = 100)
-))
-```
-
-The `metaMDS()` function:
-
--   The `metaMDS()` function performs NMDS by using multiple random starts to find a stable solution.
-
--   It standardises the output for easier interpretation and adds species scores to the site ordination. While `metaMDS()` itself doesn't directly compute NMDS - when we add the relevant information inside this function, it will.
-
--   We have set `k = 2` because we want to reduce the data to two dimensions (simplifying the data).
-
--   The `trymax` parameter, set to 100 increases the number of "random starts" to help the algorithm find a stable, "low-stress" solution.
+-   This makes NMDS particularly useful for **ecological and microbial community datasets**, where relationships between samples are often complex and non-linear.
 :::
 
-## Analysis of microbiota data - getting the plot
+## Analysis of Microbiota Data -- NMDS Workflow
 
 ::: fragment
-```{r, echo=TRUE, message=FALSE, warning=FALSE,  eval=F, echo = T }
-nmds_scores <- as.data.frame(scores(nmds, display = "sites"))
-```
+**1. Calculate a dissimilarity matrix**\
+Use a dissimilarity metric (e.g. *Bray--Curtis*) to quantify differences in microbial composition between all sample pairs.
+:::
 
+::: fragment
+**2. Rank the dissimilarities**\
+Convert the dissimilarity values into **ranked distances**, from most similar to most dissimilar.
+:::
+
+::: fragment
+**3. Initialise sample positions**\
+Place samples at **random coordinates** in a reduced **2D (or 3D) space**.
+:::
+
+::: fragment
+**4. Calculate Euclidean distances**\
+Measure the **Euclidean distances** between all points in this reduced space.
+:::
+
+::: fragment
+**5. Rank the Euclidean distances**\
+Rank these distances and compare them with the **original dissimilarity ranks**.
+:::
+
+::: fragment
+**6. Evaluate the fit (Kruskal's stress)**\
+Calculate **stress**, which measures how well the reduced-space configuration preserves the ranked dissimilarities.
+:::
+
+::: fragment
+**7. Iteratively minimise stress**\
+Adjust point positions repeatedly to **reduce stress** and improve the fit.
+:::
+
+::: fragment
+**8. Select the best solution**\
+The configuration with the **lowest stress** is chosen as the **NMDS solution**.
+:::
+
+::: fragment
+**9. Visualise the ordination**\
+Plot the NMDS scores in **2D or 3D**, where **closer points represent more similar microbial communities**.
+:::
+
+## How does NMDS work? Pin the fruit on the Medfly!!
+
+-   For this step, please may I have a volunteer!
+
+## The easy way to do NMDS in R
+
+::: fragment
+We can perform NMDS in **R** using two key packages:
+
+-   **vegan** -- ecological analysis tools (including NMDS)
+-   **tidyverse** -- data manipulation and plotting
+:::
+
+::: fragment
 ```{r}
-nmds_scores <- data.frame(
-  NMDS1 = c(-0.3322709,
-            0.7018915,
-            -0.0391868,
-            -0.3964679,
-            0.4761638,
-            -0.4101297),
-  NMDS2 = c(-0.17354187,
-            -0.57838356,
-            0.26561393,
-            -0.06633933,
-            0.63079017,
-            -0.07813934)
-)
-
-nmds_scores
-```
-
-This is a process of extracting the site scores, for us - the site is the fruit which the flies are on so based off the nmds values generated above, it will extract these ordination scores
-:::
-
-::: fragment
-```{r, echo=TRUE, message=FALSE, warning=FALSE,  eval=F, echo = T }
-nmds_scores$Fruit <- c("Argan", "Peach", "Apricot", "Grapefruit", "Orange", "Tangerine")
-```
-
-This part simply assigns our scores to the fruits
-:::
-
-::: fragment
-```{r, echo=TRUE, message=FALSE, warning=FALSE,  eval=F, echo = T }
-
-nmds_plot <- ggplot(nmds_scores,
-                    aes(x = NMDS1, y = NMDS2, colour = Fruit)) +
-  geom_point(size = 4) +
-  theme_minimal() +
-  labs(title = "NMDS Plot of Bacterial Composition",
-       subtitle = "Colored by Fruit Type",
-       x = "NMDS1", y = "NMDS2")
-       
-```
-
-Finally, we can output our plot
-:::
-
-## Analysis of microbiota data - Outputting this
-
-::: {.column width="40%"}
-```{r, echo=TRUE, message=FALSE, warning=FALSE,  eval=F, echo = T }
-# Let's get our bacteria dataframe again
 library(vegan)
 library(tidyverse)
-
-bacteria_df <- data.frame(
-  Klebsiella = c(0.75, 0.25, 0.5, 0.7, 0.3, 0.75),
-  Pantonea = c(0.15, 0.50, 0.05, 0.03, 0.02, 0.05),
-  Commensalibacter = c(0.10, 0.02, 0.01, 0.01, 0.01, 0.01),
-  Serratia = c(0.01, 0.05, 0.01, 0.01, 0.02, 0.01),
-  Spinghobacterium = c(0.01, 0.15, 0.01, 0.02, 0.01, 0.01),
-  Acinetobacter = c(0.02, 0.01, 0.01, 0.01, 0.5, 0.01)
-)
-
-# Use metaMDS to generate the ordination with lowest stress
-invisible(capture.output(
-  nmds <- c(bacteria_df, distance = "bray", k = 2, trymax = 100)
-))
-
-# Extract site scores
-nmds_scores <- as.data.frame(scores(nmds, display = "sites"))
-
-# Add fruit names
-nmds_scores$Fruit <- c("Argan", "Peach", "Apricot", "Grapefruit", "Orange", "Tangerine")
-
-# Plot the NMDS results
-nmds_plot <- ggplot(nmds_scores,
-                    aes(x = NMDS1, y = NMDS2, colour = Fruit)) +
-  geom_point(size = 4) +
-  theme_minimal() +
-  labs(title = "NMDS Plot of Bacterial Composition",
-       subtitle = "Colored by Fruit Type",
-       x = "NMDS1", y = "NMDS2")
-
-
 ```
 :::
 
-::: {.column width="60%"}
-```{r, echo=FALSE, message=FALSE, warning=FALSE, results = 'hide',  eval=T,echo = F }
-library(vegan)
-library(ggplot2)
+::: fragment
+-   First, create a simple dataframe representing bacterial abundances across samples.
+:::
 
+::: fragment
+```{r, echo=TRUE, message=FALSE, warning=FALSE,  eval=T, echo = T }
 bacteria_df <- data.frame(
   Klebsiella = c(0.75, 0.25, 0.5, 0.7, 0.3, 0.75),
-  Pantonea = c(0.15, 0.50, 0.05, 0.03, 0.02, 0.05),
+  Pantoea = c(0.15, 0.50, 0.05, 0.03, 0.02, 0.05),
   Commensalibacter = c(0.10, 0.02, 0.01, 0.01, 0.01, 0.01),
   Serratia = c(0.01, 0.05, 0.01, 0.01, 0.02, 0.01),
-  Spinghobacterium = c(0.01, 0.15, 0.01, 0.02, 0.01, 0.01),
-  Acinetobacter = c(0.02, 0.01, 0.01, 0.01, 0.5, 0.01)
+  Sphingobacterium = c(0.01, 0.15, 0.01, 0.02, 0.01, 0.01),
+  Acinetobacter = c(0.02, 0.01, 0.01, 0.01, 0.50, 0.01)
 )
+```
+:::
 
+## Running the NMDS analysis
 
-nmds <- metaMDS(bacteria_df, distance = "bray", k = 2, trymax = 100)
+::: fragment
+We use the **metaMDS()** function from the `vegan` package.
+:::
 
-nmds_scores <- as.data.frame(scores(nmds, display = "sites"))
+::: fragment
+```{r, echo=TRUE, message=FALSE, warning=FALSE,  eval=T, echo = T }
+nmds <- metaMDS(bacteria_df,distance = "bray",k = 2,trymax = 100)
+```
+:::
 
+::: fragment
+**Key arguments**
+
+`distance = "bray"`: Bray--Curtis dissimilarity
+
+`k= 2`: reduce the data to two dimensions
+
+`trymax = 100`: increase random starts to find a stable low-stress solution
+:::
+
+## Extracting NMDS scores
+
+::: fragment
+-  Extract the site scores (coordinates of samples in ordination space).
+:::
+
+::: fragment
+```{r, echo=TRUE, message=FALSE, warning=FALSE,  eval=T, echo = T }
+nmds_scores <- as.data.frame(scores(nmds, display = "sites")) 
+```
+:::
+
+::: fragment
+Add labels describing the samples.
+:::
+
+::: fragment
+```{r, echo=TRUE, message=FALSE, warning=FALSE,  eval=T, echo = T }
 nmds_scores$Fruit <- c("Argan", "Peach", "Apricot", "Grapefruit", "Orange", "Tangerine")
+```
+:::
 
+## Visualising the NMDS results
 
-nmds_plot <- ggplot(nmds_scores, 
-                    aes(x = NMDS1, y = NMDS2, color = Fruit, label = Fruit)) +
-  geom_point(size = 4) + 
-  theme_minimal() + 
-  labs(title = "NMDS Plot of Bacterial Composition", 
-       subtitle = "Colored by Fruit Type",
-       x = "NMDS1", y = "NMDS2")
+::: fragment
+We can plot the ordination using **ggplot2**.
+:::
 
-nmds_plot
+::: fragment
+```{r, echo=TRUE, message=FALSE, warning=FALSE,  eval=T, echo = T }
+ggplot(nmds_scores, aes(NMDS1, NMDS2, colour = Fruit)) +
+  geom_point(size = 4) +
+  theme_minimal() +
+  labs(
+    title = "NMDS Plot of Bacterial Composition",
+    subtitle = "Samples coloured by fruit type",
+    x = "NMDS1",
+    y = "NMDS2"
+  )
 ```
 :::

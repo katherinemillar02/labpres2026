@@ -1,0 +1,7 @@
+/* css styles */
+.reveal .title-slide {
+  background-image: url("images/tephritidae.png"), url("images/tephritidae.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 5% 50%, 95% 50%;
+  background-size: 180px;
+}

@@ -3850,204 +3850,203 @@ Plot the NMDS scores in <strong>2D or 3D</strong>, where <strong>closer points r
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>nmds <span class="ot">&lt;-</span> <span class="fu">metaMDS</span>(bacteria_df,<span class="at">distance =</span> <span class="st">"bray"</span>,<span class="at">k =</span> <span class="dv">2</span>,<span class="at">trymax =</span> <span class="dv">100</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Run 0 stress 6.486572e-05 
-Run 1 stress 0 
+Run 1 stress 9.99701e-05 
+... Procrustes: rmse 0.1235503  max resid 0.1706887 
+Run 2 stress 0 
 ... New best solution
-... Procrustes: rmse 0.08045983  max resid 0.1728467 
-Run 2 stress 9.392681e-05 
-... Procrustes: rmse 0.1927101  max resid 0.2333525 
-Run 3 stress 8.99105e-05 
-... Procrustes: rmse 0.2255568  max resid 0.3095308 
-Run 4 stress 9.983409e-05 
-... Procrustes: rmse 0.2906866  max resid 0.3658718 
-Run 5 stress 0 
-... Procrustes: rmse 0.04216238  max resid 0.06450504 
-Run 6 stress 9.549671e-05 
-... Procrustes: rmse 0.1398337  max resid 0.2892874 
-Run 7 stress 7.087462e-05 
-... Procrustes: rmse 0.1531953  max resid 0.241267 
-Run 8 stress 9.586316e-05 
-... Procrustes: rmse 0.266437  max resid 0.335729 
-Run 9 stress 0 
-... Procrustes: rmse 0.1008154  max resid 0.2145893 
-Run 10 stress 7.836028e-05 
-... Procrustes: rmse 0.07980484  max resid 0.1539441 
-Run 11 stress 9.550508e-05 
-... Procrustes: rmse 0.2938666  max resid 0.370657 
-Run 12 stress 9.928471e-05 
-... Procrustes: rmse 0.1552356  max resid 0.2059925 
-Run 13 stress 9.082909e-05 
-... Procrustes: rmse 0.1885036  max resid 0.2353817 
-Run 14 stress 8.41607e-05 
-... Procrustes: rmse 0.2165603  max resid 0.2488846 
-Run 15 stress 8.783468e-05 
-... Procrustes: rmse 0.2360281  max resid 0.3674953 
-Run 16 stress 9.954132e-05 
-... Procrustes: rmse 0.2848944  max resid 0.411547 
-Run 17 stress 8.060578e-05 
-... Procrustes: rmse 0.1717592  max resid 0.2443346 
-Run 18 stress 7.677362e-05 
-... Procrustes: rmse 0.06770435  max resid 0.1399431 
-Run 19 stress 2.167913e-05 
-... Procrustes: rmse 0.07137102  max resid 0.103241 
-Run 20 stress 9.972791e-05 
-... Procrustes: rmse 0.2297976  max resid 0.2710661 
-Run 21 stress 8.774859e-05 
-... Procrustes: rmse 0.1396001  max resid 0.2890333 
+... Procrustes: rmse 0.1817255  max resid 0.2760432 
+Run 3 stress 9.174839e-05 
+... Procrustes: rmse 0.1258471  max resid 0.1796858 
+Run 4 stress 9.566269e-05 
+... Procrustes: rmse 0.1601103  max resid 0.2868857 
+Run 5 stress 8.707705e-05 
+... Procrustes: rmse 0.222662  max resid 0.2305474 
+Run 6 stress 9.963501e-05 
+... Procrustes: rmse 0.1123288  max resid 0.1625459 
+Run 7 stress 9.946001e-05 
+... Procrustes: rmse 0.2308261  max resid 0.3875361 
+Run 8 stress 9.870598e-05 
+... Procrustes: rmse 0.1495498  max resid 0.1821377 
+Run 9 stress 9.212423e-05 
+... Procrustes: rmse 0.1554093  max resid 0.3348278 
+Run 10 stress 9.40324e-05 
+... Procrustes: rmse 0.1569887  max resid 0.3388907 
+Run 11 stress 0 
+... Procrustes: rmse 0.1257571  max resid 0.1817855 
+Run 12 stress 3.024847e-05 
+... Procrustes: rmse 0.1291558  max resid 0.2677251 
+Run 13 stress 9.363333e-05 
+... Procrustes: rmse 0.1154954  max resid 0.2450234 
+Run 14 stress 0.001605364 
+Run 15 stress 2.375618e-05 
+... Procrustes: rmse 0.1099525  max resid 0.2397743 
+Run 16 stress 0 
+... Procrustes: rmse 0.09033662  max resid 0.127193 
+Run 17 stress 0.001760233 
+Run 18 stress 9.888115e-05 
+... Procrustes: rmse 0.1318091  max resid 0.1594292 
+Run 19 stress 0.0004031812 
+... Procrustes: rmse 0.173891  max resid 0.2222812 
+Run 20 stress 0 
+... Procrustes: rmse 0.1646967  max resid 0.2610556 
+Run 21 stress 9.844749e-05 
+... Procrustes: rmse 0.0665184  max resid 0.103768 
 Run 22 stress 0 
-... Procrustes: rmse 0.1215209  max resid 0.1719963 
-Run 23 stress 4.440995e-05 
-... Procrustes: rmse 0.04363783  max resid 0.06855038 
-Run 24 stress 8.843485e-05 
-... Procrustes: rmse 0.1431082  max resid 0.2918815 
-Run 25 stress 9.473394e-05 
-... Procrustes: rmse 0.2525336  max resid 0.3764699 
-Run 26 stress 8.923492e-05 
-... Procrustes: rmse 0.1722374  max resid 0.2440863 
-Run 27 stress 9.841867e-05 
-... Procrustes: rmse 0.1935481  max resid 0.2862069 
-Run 28 stress 9.673116e-05 
-... Procrustes: rmse 0.177454  max resid 0.241122 
-Run 29 stress 9.984645e-05 
-... Procrustes: rmse 0.2632146  max resid 0.3582802 
-Run 30 stress 9.286995e-05 
-... Procrustes: rmse 0.1410322  max resid 0.290456 
+... Procrustes: rmse 0.1308872  max resid 0.218318 
+Run 23 stress 0.001115559 
+Run 24 stress 8.280122e-05 
+... Procrustes: rmse 0.15495  max resid 0.3333978 
+Run 25 stress 4.171787e-05 
+... Procrustes: rmse 0.07267199  max resid 0.08993438 
+Run 26 stress 9.591763e-05 
+... Procrustes: rmse 0.1537266  max resid 0.21318 
+Run 27 stress 9.839982e-05 
+... Procrustes: rmse 0.1827981  max resid 0.1930491 
+Run 28 stress 9.820407e-05 
+... Procrustes: rmse 0.1765368  max resid 0.2327211 
+Run 29 stress 0 
+... Procrustes: rmse 0.1997335  max resid 0.3406124 
+Run 30 stress 9.267936e-05 
+... Procrustes: rmse 0.1381877  max resid 0.278159 
 Run 31 stress 0 
-... Procrustes: rmse 0.1319329  max resid 0.2709259 
-Run 32 stress 8.670188e-05 
-... Procrustes: rmse 0.141772  max resid 0.2676566 
-Run 33 stress 0 
-... Procrustes: rmse 0.1359148  max resid 0.1909735 
-Run 34 stress 1.469068e-05 
-... Procrustes: rmse 0.06195387  max resid 0.1039586 
-Run 35 stress 4.105699e-05 
-... Procrustes: rmse 0.2327316  max resid 0.3544779 
-Run 36 stress 0 
-... Procrustes: rmse 0.03032148  max resid 0.03913067 
-Run 37 stress 0.0002135735 
-... Procrustes: rmse 0.2963947  max resid 0.4083937 
-Run 38 stress 0.00116739 
-Run 39 stress 9.593226e-05 
-... Procrustes: rmse 0.1420491  max resid 0.2912552 
-Run 40 stress 9.89179e-05 
-... Procrustes: rmse 0.1358118  max resid 0.2792825 
-Run 41 stress 8.547297e-05 
-... Procrustes: rmse 0.2183556  max resid 0.2519432 
-Run 42 stress 6.062217e-05 
-... Procrustes: rmse 0.1422769  max resid 0.2902332 
-Run 43 stress 9.806148e-05 
-... Procrustes: rmse 0.1406151  max resid 0.290078 
-Run 44 stress 6.308004e-05 
-... Procrustes: rmse 0.1351067  max resid 0.1713508 
-Run 45 stress 0 
-... Procrustes: rmse 0.1091874  max resid 0.2259378 
-Run 46 stress 9.071668e-05 
-... Procrustes: rmse 0.137665  max resid 0.2863864 
-Run 47 stress 0.001084321 
-Run 48 stress 0 
-... Procrustes: rmse 0.05709364  max resid 0.08583262 
-Run 49 stress 0 
-... Procrustes: rmse 0.1889809  max resid 0.2651126 
-Run 50 stress 0.0006252864 
+... Procrustes: rmse 0.1619841  max resid 0.2841112 
+Run 32 stress 8.743604e-05 
+... Procrustes: rmse 0.233239  max resid 0.3879028 
+Run 33 stress 8.994962e-05 
+... Procrustes: rmse 0.2240365  max resid 0.3862381 
+Run 34 stress 5.920958e-05 
+... Procrustes: rmse 0.1474016  max resid 0.2286753 
+Run 35 stress 9.489985e-05 
+... Procrustes: rmse 0.2153303  max resid 0.3344609 
+Run 36 stress 8.10909e-05 
+... Procrustes: rmse 0.1390315  max resid 0.2031614 
+Run 37 stress 9.068423e-05 
+... Procrustes: rmse 0.07844125  max resid 0.1217538 
+Run 38 stress 9.739732e-05 
+... Procrustes: rmse 0.1099081  max resid 0.1998309 
+Run 39 stress 8.131413e-05 
+... Procrustes: rmse 0.1747711  max resid 0.2775105 
+Run 40 stress 8.858026e-05 
+... Procrustes: rmse 0.2336187  max resid 0.3879511 
+Run 41 stress 8.909386e-05 
+... Procrustes: rmse 0.1538121  max resid 0.3291407 
+Run 42 stress 0 
+... Procrustes: rmse 0.1767445  max resid 0.2808325 
+Run 43 stress 9.412335e-05 
+... Procrustes: rmse 0.2295991  max resid 0.3873236 
+Run 44 stress 9.994145e-05 
+... Procrustes: rmse 0.090949  max resid 0.1776169 
+Run 45 stress 9.28391e-05 
+... Procrustes: rmse 0.177823  max resid 0.2582435 
+Run 46 stress 6.13629e-05 
+... Procrustes: rmse 0.08909384  max resid 0.1646301 
+Run 47 stress 8.998534e-05 
+... Procrustes: rmse 0.2245841  max resid 0.3692716 
+Run 48 stress 9.167288e-05 
+... Procrustes: rmse 0.2313167  max resid 0.3876153 
+Run 49 stress 8.94276e-05 
+... Procrustes: rmse 0.1921577  max resid 0.3744142 
+Run 50 stress 0 
+... Procrustes: rmse 0.04887819  max resid 0.09112554 
 Run 51 stress 0 
-... Procrustes: rmse 0.05233793  max resid 0.1023052 
-Run 52 stress 9.832253e-05 
-... Procrustes: rmse 0.1424808  max resid 0.2916518 
-Run 53 stress 9.114304e-05 
-... Procrustes: rmse 0.1402638  max resid 0.2897271 
-Run 54 stress 8.53108e-05 
-... Procrustes: rmse 0.2273726  max resid 0.3535211 
+... Procrustes: rmse 0.1221983  max resid 0.1665101 
+Run 52 stress 8.961231e-05 
+... Procrustes: rmse 0.1641862  max resid 0.2807655 
+Run 53 stress 1.146806e-05 
+... Procrustes: rmse 0.1892065  max resid 0.296848 
+Run 54 stress 0 
+... Procrustes: rmse 0.1968215  max resid 0.3057659 
 Run 55 stress 0 
-... Procrustes: rmse 0.05125501  max resid 0.08165779 
-Run 56 stress 9.94309e-05 
-... Procrustes: rmse 0.2743656  max resid 0.4094253 
-Run 57 stress 6.259324e-05 
-... Procrustes: rmse 0.3103564  max resid 0.3958949 
-Run 58 stress 8.376437e-05 
-... Procrustes: rmse 0.05465595  max resid 0.09300527 
-Run 59 stress 0 
-... Procrustes: rmse 0.1912559  max resid 0.2912109 
-Run 60 stress 9.919216e-05 
-... Procrustes: rmse 0.2854457  max resid 0.3801105 
-Run 61 stress 9.781827e-05 
-... Procrustes: rmse 0.2379327  max resid 0.2843227 
-Run 62 stress 1.058643e-05 
-... Procrustes: rmse 0.1949079  max resid 0.3060807 
-Run 63 stress 0 
-... Procrustes: rmse 0.118839  max resid 0.2440152 
-Run 64 stress 0.0001454191 
-... Procrustes: rmse 0.1187766  max resid 0.1823741 
-Run 65 stress 9.557945e-05 
-... Procrustes: rmse 0.1412973  max resid 0.290685 
-Run 66 stress 8.856333e-05 
-... Procrustes: rmse 0.2613879  max resid 0.3516402 
-Run 67 stress 6.053098e-05 
-... Procrustes: rmse 0.1286416  max resid 0.2624469 
-Run 68 stress 9.75038e-05 
-... Procrustes: rmse 0.2657627  max resid 0.3730079 
-Run 69 stress 9.212547e-05 
-... Procrustes: rmse 0.1435944  max resid 0.2656021 
-Run 70 stress 9.091446e-05 
-... Procrustes: rmse 0.1360284  max resid 0.2812139 
-Run 71 stress 9.101828e-05 
-... Procrustes: rmse 0.1391873  max resid 0.2885619 
-Run 72 stress 9.71602e-05 
-... Procrustes: rmse 0.2232142  max resid 0.3512946 
-Run 73 stress 9.758952e-05 
-... Procrustes: rmse 0.2870951  max resid 0.4116068 
+... Procrustes: rmse 0.08106661  max resid 0.1661451 
+Run 56 stress 0.0001205876 
+... Procrustes: rmse 0.1759763  max resid 0.2227468 
+Run 57 stress 9.417696e-05 
+... Procrustes: rmse 0.2313147  max resid 0.3876078 
+Run 58 stress 8.225808e-05 
+... Procrustes: rmse 0.2192488  max resid 0.2250373 
+Run 59 stress 6.057974e-05 
+... Procrustes: rmse 0.05728186  max resid 0.1020232 
+Run 60 stress 0.0001157827 
+... Procrustes: rmse 0.2191977  max resid 0.2238843 
+Run 61 stress 9.343238e-05 
+... Procrustes: rmse 0.2348867  max resid 0.3881207 
+Run 62 stress 9.278516e-05 
+... Procrustes: rmse 0.09831036  max resid 0.1721796 
+Run 63 stress 0.0004362072 
+... Procrustes: rmse 0.217088  max resid 0.2394896 
+Run 64 stress 9.435168e-05 
+... Procrustes: rmse 0.2341255  max resid 0.3880182 
+Run 65 stress 9.938344e-05 
+... Procrustes: rmse 0.1541951  max resid 0.3045977 
+Run 66 stress 0 
+... Procrustes: rmse 0.09276199  max resid 0.172537 
+Run 67 stress 9.129695e-05 
+... Procrustes: rmse 0.1600525  max resid 0.187155 
+Run 68 stress 8.056793e-05 
+... Procrustes: rmse 0.1588618  max resid 0.2382281 
+Run 69 stress 7.510868e-05 
+... Procrustes: rmse 0.1762648  max resid 0.2549528 
+Run 70 stress 0 
+... Procrustes: rmse 0.1783726  max resid 0.3033686 
+Run 71 stress 6.268601e-05 
+... Procrustes: rmse 0.1302461  max resid 0.1764912 
+Run 72 stress 8.861047e-05 
+... Procrustes: rmse 0.06061704  max resid 0.08221365 
+Run 73 stress 0.0005490831 
 Run 74 stress 0 
-... Procrustes: rmse 0.1523842  max resid 0.210571 
-Run 75 stress 7.148557e-05 
-... Procrustes: rmse 0.2455101  max resid 0.3733522 
-Run 76 stress 9.737436e-05 
-... Procrustes: rmse 0.2701531  max resid 0.4073409 
-Run 77 stress 6.801807e-05 
-... Procrustes: rmse 0.05044977  max resid 0.07219768 
-Run 78 stress 9.69833e-05 
-... Procrustes: rmse 0.2203887  max resid 0.3366903 
-Run 79 stress 0.2761338 
-Run 80 stress 9.782289e-05 
-... Procrustes: rmse 0.2273848  max resid 0.2670933 
-Run 81 stress 9.9199e-05 
-... Procrustes: rmse 0.1566662  max resid 0.2091526 
-Run 82 stress 0.0007467058 
-Run 83 stress 0 
-... Procrustes: rmse 0.1298339  max resid 0.1929257 
-Run 84 stress 0.001049636 
-Run 85 stress 9.460345e-05 
-... Procrustes: rmse 0.1375102  max resid 0.2744281 
-Run 86 stress 9.933658e-05 
-... Procrustes: rmse 0.1616792  max resid 0.2105624 
-Run 87 stress 9.548098e-05 
-... Procrustes: rmse 0.1935177  max resid 0.2602215 
-Run 88 stress 4.991314e-05 
-... Procrustes: rmse 0.2485366  max resid 0.372044 
-Run 89 stress 0 
-... Procrustes: rmse 0.06480638  max resid 0.08589521 
-Run 90 stress 1.725133e-08 
-... Procrustes: rmse 0.1778135  max resid 0.2386552 
-Run 91 stress 5.333965e-05 
-... Procrustes: rmse 0.06608187  max resid 0.1345931 
-Run 92 stress 9.743467e-05 
-... Procrustes: rmse 0.2446356  max resid 0.3480729 
-Run 93 stress 5.998535e-05 
-... Procrustes: rmse 0.1396308  max resid 0.2889641 
-Run 94 stress 9.468746e-05 
-... Procrustes: rmse 0.2655606  max resid 0.3633771 
-Run 95 stress 5.154527e-05 
-... Procrustes: rmse 0.04409358  max resid 0.06880304 
-Run 96 stress 9.165648e-05 
-... Procrustes: rmse 0.1395371  max resid 0.1937505 
-Run 97 stress 0.001587304 
-Run 98 stress 0 
-... Procrustes: rmse 0.1202741  max resid 0.25422 
-Run 99 stress 8.834792e-05 
-... Procrustes: rmse 0.2491031  max resid 0.302023 
-Run 100 stress 5.443856e-05 
-... Procrustes: rmse 0.1351759  max resid 0.2818258 
+... Procrustes: rmse 0.130652  max resid 0.1958929 
+Run 75 stress 9.916776e-05 
+... Procrustes: rmse 0.2347557  max resid 0.3881114 
+Run 76 stress 9.931897e-05 
+... Procrustes: rmse 0.1263824  max resid 0.1470638 
+Run 77 stress 9.35211e-05 
+... Procrustes: rmse 0.2139998  max resid 0.3836121 
+Run 78 stress 0.2761341 
+Run 79 stress 0.00093586 
+Run 80 stress 5.818915e-05 
+... Procrustes: rmse 0.2268408  max resid 0.3699801 
+Run 81 stress 8.324511e-05 
+... Procrustes: rmse 0.1555068  max resid 0.3351046 
+Run 82 stress 8.522359e-05 
+... Procrustes: rmse 0.1565863  max resid 0.3379358 
+Run 83 stress 1.37409e-05 
+... Procrustes: rmse 0.1761369  max resid 0.3048686 
+Run 84 stress 0.2761337 
+Run 85 stress 4.459499e-06 
+... Procrustes: rmse 0.1908676  max resid 0.2944839 
+Run 86 stress 9.825301e-05 
+... Procrustes: rmse 0.2353861  max resid 0.3881853 
+Run 87 stress 4.113201e-05 
+... Procrustes: rmse 0.2313685  max resid 0.3751567 
+Run 88 stress 0.276134 
+Run 89 stress 9.942329e-05 
+... Procrustes: rmse 0.1918676  max resid 0.3742672 
+Run 90 stress 0 
+... Procrustes: rmse 0.2241972  max resid 0.3762568 
+Run 91 stress 9.111607e-05 
+... Procrustes: rmse 0.213401  max resid 0.363279 
+Run 92 stress 3.466838e-05 
+... Procrustes: rmse 0.1575742  max resid 0.2928387 
+Run 93 stress 2.475336e-05 
+... Procrustes: rmse 0.1859286  max resid 0.3162426 
+Run 94 stress 2.016125e-05 
+... Procrustes: rmse 0.1879269  max resid 0.3069427 
+Run 95 stress 9.054436e-05 
+... Procrustes: rmse 0.1563632  max resid 0.3373924 
+Run 96 stress 9.049884e-05 
+... Procrustes: rmse 0.1528525  max resid 0.3126789 
+Run 97 stress 9.935941e-05 
+... Procrustes: rmse 0.2282231  max resid 0.3870802 
+Run 98 stress 9.792501e-05 
+... Procrustes: rmse 0.2284203  max resid 0.3871228 
+Run 99 stress 8.54287e-05 
+... Procrustes: rmse 0.196146  max resid 0.3217689 
+Run 100 stress 9.971439e-05 
+... Procrustes: rmse 0.1011971  max resid 0.1543436 
 *** Best solution was not repeated -- monoMDS stopping criteria:
-     8: no. of iterations &gt;= maxit
-    91: stress &lt; smin
-     1: stress ratio &gt; sratmax</code></pre>
+     9: no. of iterations &gt;= maxit
+    88: stress &lt; smin
+     3: stress ratio &gt; sratmax</code></pre>
 </div>
 </div>
 </div>
@@ -4061,22 +4060,16 @@ Run 100 stress 5.443856e-05
 <section id="extracting-nmds-scores" class="slide level2">
 <h2>Extracting NMDS scores</h2>
 <div class="fragment">
-<ul>
-<li>Extract the site scores (coordinates of samples in ordination space).</li>
-</ul>
+<p>Extract the <strong>site scores</strong> (coordinates of samples in ordination space).</p>
 </div>
 <div class="fragment">
-<div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a>nmds_scores <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(<span class="fu">scores</span>(nmds, <span class="at">display =</span> <span class="st">"sites"</span>)) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
+
 </div>
 <div class="fragment">
 <p>Add labels describing the samples.</p>
 </div>
 <div class="fragment">
-<div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>nmds_scores<span class="sc">$</span>Fruit <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Argan"</span>, <span class="st">"Peach"</span>, <span class="st">"Apricot"</span>, <span class="st">"Grapefruit"</span>, <span class="st">"Orange"</span>, <span class="st">"Tangerine"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
+
 </div>
 </section>
 <section id="visualising-the-nmds-results" class="slide level2">
@@ -4086,15 +4079,6 @@ Run 100 stress 5.443856e-05
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a><span class="fu">ggplot</span>(nmds_scores, <span class="fu">aes</span>(NMDS1, NMDS2, <span class="at">colour =</span> Fruit)) <span class="sc">+</span></span>
-<span id="cb6-2"><a href="#cb6-2"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">4</span>) <span class="sc">+</span></span>
-<span id="cb6-3"><a href="#cb6-3"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
-<span id="cb6-4"><a href="#cb6-4"></a>  <span class="fu">labs</span>(</span>
-<span id="cb6-5"><a href="#cb6-5"></a>    <span class="at">title =</span> <span class="st">"NMDS Plot of Bacterial Composition"</span>,</span>
-<span id="cb6-6"><a href="#cb6-6"></a>    <span class="at">subtitle =</span> <span class="st">"Samples coloured by fruit type"</span>,</span>
-<span id="cb6-7"><a href="#cb6-7"></a>    <span class="at">x =</span> <span class="st">"NMDS1"</span>,</span>
-<span id="cb6-8"><a href="#cb6-8"></a>    <span class="at">y =</span> <span class="st">"NMDS2"</span></span>
-<span id="cb6-9"><a href="#cb6-9"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <p><img data-src="index_files/figure-revealjs/unnamed-chunk-9-1.png" width="960"></p>
 </div>
